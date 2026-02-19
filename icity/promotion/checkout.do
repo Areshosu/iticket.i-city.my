@@ -4,19 +4,19 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
-	<link rel="shortcut icon" href="/icity/images/favicon.ico">
+	<link rel="shortcut icon" href="/iticket.i-city.my/icity/images/favicon.ico">
 	<title>Account Sign In | iCity</title>
 	
-<link rel="stylesheet" type="text/css" media="screen" href="/web/jquery/themes/smoothness/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/iticket.i-city.my/web/jquery/themes/smoothness/jquery-ui.css"/>
 <!--[if lte IE 7]>
 <style type="text/css">
 html .jquerycssmenu{height: 1%;} /*Holly Hack for IE7 and below*/
 </style>
 <![endif]-->
 
-<link rel="stylesheet" type="text/css" href="/icity/promotion/common/awesome/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/icity/promotion/common/reset.css"/>
-<link rel="stylesheet" type="text/css" href="/icity/promotion/common/screen-min.css"/>
+<link rel="stylesheet" type="text/css" href="/iticket.i-city.my/icity/promotion/common/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/iticket.i-city.my/icity/promotion/common/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/iticket.i-city.my/icity/promotion/common/screen-min.css"/>
 
 	
 
@@ -177,7 +177,7 @@ function getCartCount() {
 }
 </script>
 <div class="main_header left">
-	<a href="/icity/promotion/list.do">
+	<a href="/iticket.i-city.my/icity/promotion/list.do">
 		<img src="/icity/images/logo_title.jpg" border="0" /> <br>
 		<span style="color:white; font-size:20px";><b>Online Ticketing</b></span>
 	</a>
@@ -186,12 +186,12 @@ function getCartCount() {
 <!-- navigator -->
 <div class="main_navigator">
 	<ul>
-		<li><a href="/icity/promotion/list.do">Home</a></li>
-		<li><a href="/icity/promotion/how-to-go.get">How To Go</a></li>
-		<li><a href="/icity/promotion/operation-hours.get">Operation Hours</a></li>
-		<li><a href="/icity/promotion/faq.get">FAQs</a></li>
+		<li><a href="/iticket.i-city.my/icity/promotion/list.do">Home</a></li>
+		<li><a href="/iticket.i-city.my/icity/promotion/how-to-go.get">How To Go</a></li>
+		<li><a href="/iticket.i-city.my/icity/promotion/operation-hours.get">Operation Hours</a></li>
+		<li><a href="/iticket.i-city.my/icity/promotion/faq.get">FAQs</a></li>
 		<li><a href="http://i-city.my/crm/" target="_blank" title="Click to contact us">Support</a></li>
-		<li><a href="/icity/promotion/about-us.get">Contact Us</a></li>
+		<li><a href="/iticket.i-city.my/icity/promotion/about-us.get">Contact Us</a></li>
 	</ul>
 </div>
 
@@ -199,12 +199,12 @@ function getCartCount() {
 <div class="main_userbar">
 	<div class="main_userbar_inner">
 		<ul>
-			<li class="login-option"><a href="/icity/member/signin.do"><i class="icon-lock"></i> Welcome (Guest)</a></li>
-			<li class="member-option"><a href="/icity/member/account.do"><i class="icon-lock"></i> Welcome (<span id="memberName"></span>)</a></li>
-			<li class="login-option"><a href="/icity/member/signin.do"><i class="icon-signin"></i> Sign In</a></li>
-			<li class="login-option"><a href="/icity/registration"><i class="icon-keyboard"></i> Register</a></li>
+			<li class="login-option"><a href="/iticket.i-city.my/icity/member/signin.do"><i class="icon-lock"></i> Welcome (Guest)</a></li>
+			<li class="member-option"><a href="/iticket.i-city.my/icity/member/account.do"><i class="icon-lock"></i> Welcome (<span id="memberName"></span>)</a></li>
+			<li class="login-option"><a href="/iticket.i-city.my/icity/member/signin.do"><i class="icon-signin"></i> Sign In</a></li>
+			<li class="login-option"><a href="/iticket.i-city.my/icity/registration"><i class="icon-keyboard"></i> Register</a></li>
 			<li class="member-option"><a href="#" id="logout"><i class="icon-signout"></i> Logout</a></li>
-			<li><a href="/icity/promotion/checkout.do"><i class="icon-shopping-cart"></i> <span id="cart-count">Shopping Cart</span></a></li>
+			<li><a href="/iticket.i-city.my/icity/promotion/checkout.do"><i class="icon-shopping-cart"></i> <span id="cart-count">Shopping Cart</span></a></li>
 		</ul>
 	</div>
 </div>
@@ -247,7 +247,7 @@ function getCartCount() {
 									<br>
 									<button class="submit cta" type="submit" id="signin"><i class="icon-lock"></i> Sign In</button>	
 									<br>
-									<a class="forgot" href="/icity/registration/forgot-password.do">Forgot your password?</a>
+									<a class="forgot" href="/iticket.i-city.my/icity/registration/forgot-password.do">Forgot your password?</a>
 								</form>
 						
 								<span class="divider"></span>
@@ -257,7 +257,7 @@ function getCartCount() {
 									<span>
 										Create an account to shop faster, be up-to-date on an order's status, and keep track of the orders you have previously made.
 									</span>
-									<a class="submit cta" href="/icity/registration/view.do">Register 
+									<a class="submit cta" href="/iticket.i-city.my/icity/registration/view.do">Register 
 										<i class="icon-angle-right"></i>
 									</a><br>
 								</form>
@@ -288,7 +288,7 @@ function getCartCount() {
 				</td>
 				<td rowspan="2" style="vertical-align:top; text-align:right; color: #666666;">
 					<div id="copyright">
-					Copyright © 2015. Best Compatible With Google Chrome & Internet Explorer
+					Copyright ï¿½ 2015. Best Compatible With Google Chrome & Internet Explorer
 					</div>
 				</td>
 			</tr>

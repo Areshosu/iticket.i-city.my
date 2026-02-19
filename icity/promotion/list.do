@@ -16,20 +16,20 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
-<link rel="shortcut icon" href="/icity/images/favicon.ico">
+<link rel="shortcut icon" href="/iticket.i-city.my/icity/images/favicon.ico">
 <title>Promotions | iCity</title>
 
 
-<link rel="stylesheet" type="text/css" media="screen" href="/web/jquery/themes/smoothness/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/iticket.i-city.my/web/jquery/themes/smoothness/jquery-ui.css"/>
 <!--[if lte IE 7]>
 <style type="text/css">
 html .jquerycssmenu{height: 1%;} /*Holly Hack for IE7 and below*/
 </style>
 <![endif]-->
 
-<link rel="stylesheet" type="text/css" href="/icity/promotion/common/awesome/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/icity/promotion/common/reset.css"/>
-<link rel="stylesheet" type="text/css" href="/icity/promotion/common/screen-min.css"/>
+<link rel="stylesheet" type="text/css" href="/iticket.i-city.my/icity/promotion/common/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/iticket.i-city.my/icity/promotion/common/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/iticket.i-city.my/icity/promotion/common/screen-min.css"/>
 
 
 
@@ -1592,7 +1592,7 @@ function getCartCount() {
 }
 </script>
 <div class="main_header left">
-	<a href="/icity/promotion/list.do">
+	<a href="/iticket.i-city.my/icity/promotion/list.do">
 		<img src="/icity/images/logo_title.jpg" border="0" /> <br>
 		<span style="color:white; font-size:20px";><b>Online Ticketing</b></span>
 	</a>
@@ -1601,12 +1601,12 @@ function getCartCount() {
 <!-- navigator -->
 <div class="main_navigator">
 	<ul>
-		<li><a href="/icity/promotion/list.do">Home</a></li>
-		<li><a href="/icity/promotion/how-to-go.get">How To Go</a></li>
-		<li><a href="/icity/promotion/operation-hours.get">Operation Hours</a></li>
-		<li><a href="/icity/promotion/faq.get">FAQs</a></li>
+		<li><a href="/iticket.i-city.my/icity/promotion/list.do">Home</a></li>
+		<li><a href="/iticket.i-city.my/icity/promotion/how-to-go.get">How To Go</a></li>
+		<li><a href="/iticket.i-city.my/icity/promotion/operation-hours.get">Operation Hours</a></li>
+		<li><a href="/iticket.i-city.my/icity/promotion/faq.get">FAQs</a></li>
 		<li><a href="http://i-city.my/crm/" target="_blank" title="Click to contact us">Support</a></li>
-		<li><a href="/icity/promotion/about-us.get">Contact Us</a></li>
+		<li><a href="/iticket.i-city.my/icity/promotion/about-us.get">Contact Us</a></li>
 	</ul>
 </div>
 
@@ -1614,12 +1614,12 @@ function getCartCount() {
 <div class="main_userbar">
 	<div class="main_userbar_inner">
 		<ul>
-			<li class="login-option"><a href="/icity/member/signin.do"><i class="icon-lock"></i> Welcome (Guest)</a></li>
-			<li class="member-option"><a href="/icity/member/account.do"><i class="icon-lock"></i> Welcome (<span id="memberName"></span>)</a></li>
-			<li class="login-option"><a href="/icity/member/signin.do"><i class="icon-signin"></i> Sign In</a></li>
-			<li class="login-option"><a href="/icity/registration"><i class="icon-keyboard"></i> Register</a></li>
+			<li class="login-option"><a href="/iticket.i-city.my/icity/member/signin.do"><i class="icon-lock"></i> Welcome (Guest)</a></li>
+			<li class="member-option"><a href="/iticket.i-city.my/icity/member/account.do"><i class="icon-lock"></i> Welcome (<span id="memberName"></span>)</a></li>
+			<li class="login-option"><a href="/iticket.i-city.my/icity/member/signin.do"><i class="icon-signin"></i> Sign In</a></li>
+			<li class="login-option"><a href="/iticket.i-city.my/icity/registration"><i class="icon-keyboard"></i> Register</a></li>
 			<li class="member-option"><a href="#" id="logout"><i class="icon-signout"></i> Logout</a></li>
-			<li><a href="/icity/promotion/checkout.do"><i class="icon-shopping-cart"></i> <span id="cart-count">Shopping Cart</span></a></li>
+			<li><a href="/iticket.i-city.my/icity/promotion/checkout.do"><i class="icon-shopping-cart"></i> <span id="cart-count">Shopping Cart</span></a></li>
 		</ul>
 	</div>
 </div>
@@ -1646,13 +1646,13 @@ function getCartCount() {
 			
 			<div id="main_slider" class="box_skitter">
 				<ul>
-					<!-- li><a href="/icity/promotion/view.do?promotionId=913A24CC-A430-46F5-8397-3920BD124448"><img src="/icity/images/s1.jpg"></a></li>
-					<li><a href="/icity/promotion/view.do?promotionId=6C0898FD-4DC5-4B47-8E68-293990C302EC"><img src="/icity/images/s2.jpg"></a></li>
-					<li><a href="/icity/promotion/view.do?promotionId=9D52C08B-DF6E-4F75-894B-470D2C8A81C5"><img src="/icity/images/s3.jpg"></a></li>
+					<!-- li><a href="/iticket.i-city.my/icity/promotion/view.do?promotionId=913A24CC-A430-46F5-8397-3920BD124448"><img src="/icity/images/s1.jpg"></a></li>
+					<li><a href="/iticket.i-city.my/icity/promotion/view.do?promotionId=6C0898FD-4DC5-4B47-8E68-293990C302EC"><img src="/icity/images/s2.jpg"></a></li>
+					<li><a href="/iticket.i-city.my/icity/promotion/view.do?promotionId=9D52C08B-DF6E-4F75-894B-470D2C8A81C5"><img src="/icity/images/s3.jpg"></a></li>
 					<li><img src="/icity/images/s4.jpg"></li>
 					<li><img src="/icity/images/s5.jpg"></li>
-					<li><a href="/icity/promotion/view.do?promotionId=23"><img src="/icity/images/s6.jpg"></a></li>
-					<li><a href="/icity/promotion/view.do?promotionId=9957D3C8-5B27-488D-86F2-5F70B26AEA31"><img src="/icity/images/s7.jpg"></a></li>
+					<li><a href="/iticket.i-city.my/icity/promotion/view.do?promotionId=23"><img src="/icity/images/s6.jpg"></a></li>
+					<li><a href="/iticket.i-city.my/icity/promotion/view.do?promotionId=9957D3C8-5B27-488D-86F2-5F70B26AEA31"><img src="/icity/images/s7.jpg"></a></li>
 					<li><a href="https://goo.gl/o5vY15" target="_new"><img src="/icity/images/s8.jpg"></a></li -->
 					
 					
@@ -1700,12 +1700,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=9D7281B3-EEAB-4451-B43E-7FEFE0DFA676">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=9D7281B3-EEAB-4451-B43E-7FEFE0DFA676">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=9D7281B3-EEAB-4451-B43E-7FEFE0DFA676/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=9D7281B3-EEAB-4451-B43E-7FEFE0DFA676">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=9D7281B3-EEAB-4451-B43E-7FEFE0DFA676">
 								2D1N Stay and Play for 2 person (13 Feb - 31 May 2017)
 								<span><p><strong>Package includes:</strong><br />- One (1) night stay at Best Western Hotel, i-City</p>
 <p>- Superior Room (Twin-Sharing)<br />- Buffet Breakfast for two (2) persons<br />- One (1) x i-Card&nbsp;RM100 Value&nbsp;<br />- Free WI-FI Internet in guest rooms<br /><br />The valued i-Card can be used to enjoy various attractions at i-City Theme Park.<br /><br /><strong>Booking Period: Now - 28&nbsp;May&nbsp;2017</strong><br /><strong>Visit Period:&nbsp;3 April - 31 May&nbsp;2017</strong></p>
@@ -1833,12 +1833,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=56F39586-BBE6-429D-B71D-B1A207D74EF0">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=56F39586-BBE6-429D-B71D-B1A207D74EF0">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=56F39586-BBE6-429D-B71D-B1A207D74EF0/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=56F39586-BBE6-429D-B71D-B1A207D74EF0">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=56F39586-BBE6-429D-B71D-B1A207D74EF0">
 								All Day Happy Package Non-MyCard (Now - 24 June 2017 before 6pm)
 								<span><p><strong><span class="name">All Day Happy Package covers entry to:</span></strong></p>
 <p>- WaterWorld (CLOSED on <strong>Tuesdays)</strong><br />- SnoWalk<br />- Red Carpet<br />- Trick Art Museum<br />- House of Horror<br />- Space Mission</p>
@@ -2087,12 +2087,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=AF4C3F6F-48D9-4256-AB4E-DAEC7A718D4F">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=AF4C3F6F-48D9-4256-AB4E-DAEC7A718D4F">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=AF4C3F6F-48D9-4256-AB4E-DAEC7A718D4F/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=AF4C3F6F-48D9-4256-AB4E-DAEC7A718D4F">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=AF4C3F6F-48D9-4256-AB4E-DAEC7A718D4F">
 								For Family and MOM! - Waterworld + Red Carpet (1 person)
 								<span><p><span style="font-size: 10pt; font-family: arial, helvetica, sans-serif;">May is for mom !! Happy Mother's Day !</span></p>
 <p><span style="font-size: 10pt; font-family: arial, helvetica, sans-serif;">Special for moms and family !</span></p>
@@ -2181,12 +2181,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=D2F185D1-1B91-4B60-B7E0-5C8792EBB99E">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=D2F185D1-1B91-4B60-B7E0-5C8792EBB99E">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=D2F185D1-1B91-4B60-B7E0-5C8792EBB99E/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=D2F185D1-1B91-4B60-B7E0-5C8792EBB99E">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=D2F185D1-1B91-4B60-B7E0-5C8792EBB99E">
 								i-Card Member Birthday Pass 
 								<span><p><span class="name">Happy Birthday! </span></p>
 <p><span class="name">Special to all i-Card members,&nbsp;splash away your special day&nbsp;by basking under the sun at the Waterworld and&nbsp;enjoy the view of over a million LED lights at night to create a &lsquo;lightscape&rsquo; set in a forest of maple and pine with jewel-toned luminosity.</span></p>
@@ -2441,12 +2441,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=7143091B-6260-4FDA-A957-3C621204427D">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=7143091B-6260-4FDA-A957-3C621204427D">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=7143091B-6260-4FDA-A957-3C621204427D/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=7143091B-6260-4FDA-A957-3C621204427D">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=7143091B-6260-4FDA-A957-3C621204427D">
 								Online Travel Fair - Buy1Free1 Point i-Card RM100
 								<span><p><span style="font-family: verdana, geneva, sans-serif;"><span style="font-size: 10pt;"><span style="font-size: 11pt;"><strong>Pay RM100, Get RM200</strong>&nbsp;!!&nbsp;</span><br /><br />Do not miss this irresistible deal to visit i-City this&nbsp;<strong>Ramadhan</strong> month!!&nbsp;</span><span style="font-size: 10pt;">Grab the opportunity to enjoy<strong> Buy one Free one</strong> points in your&nbsp;<strong>i-Card</strong>!!&nbsp;<br /><br /></span><span style="font-size: 10pt;">Bookings is now open !</span></span></p>
 <p><span style="font-family: verdana, geneva, sans-serif;"><span style="font-size: 10pt;"><strong><br />Visit Period: &nbsp;27 May 2017 - 23 June 2017<br /><br /></strong></span><span style="font-size: 10pt;">i-City operates on a cashless system, use your i-points to enjoy the various rides and attractions in i-City theme park.<br /><br /></span><span style="font-size: 10pt;">Denomination : RM1 = 1 i-point</span></span><br /><br /></p>
@@ -2778,12 +2778,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=4BA0767D-C332-464C-8C1C-55CCBE24CF02">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=4BA0767D-C332-464C-8C1C-55CCBE24CF02">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=4BA0767D-C332-464C-8C1C-55CCBE24CF02/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=4BA0767D-C332-464C-8C1C-55CCBE24CF02">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=4BA0767D-C332-464C-8C1C-55CCBE24CF02">
 								Online Travel Fair - Buy1Free1 Points i-Card RM50
 								<span><p><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><span style="font-size: 11pt;"><strong>Pay RM50*, Get RM100</strong>&nbsp;!!&nbsp;</span><br /><br />Do not miss this irresistible deal to visit i-City this&nbsp;<strong>Ramadhan</strong>&nbsp;month!!&nbsp;</span><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Grab the opportunity to enjoy<strong>&nbsp;Buy one Free one</strong>&nbsp;points in your&nbsp;<strong>i-Card</strong>!!&nbsp;<br /><br /></span><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Bookings is now open !<br /></span><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><strong><span style="font-size: 10pt;"><strong><br /></strong></span>Visit Period: &nbsp;27 May 2017 - 23 June 2017<br /><br /></strong></span><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">i-City operates on a cashless system, use your i-points to enjoy the various rides and attractions in i-City theme park.<br /><br /></span><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Denomination : RM1 = 1 i-point</span><br /><br /></p>
 <p><span style="font-family: helvetica, arial, sans-serif; font-size: 11pt;"><strong>General Opening Hours:</strong></span><br /><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Weekdays: 10.00am - 12.00am</span><br /><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Weekends / PH / School Holidays: 10.00am - 1.00am</span></p>
@@ -3114,12 +3114,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=AE7FD3C7-2D8B-42D1-81D8-CC67AF7253AF">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=AE7FD3C7-2D8B-42D1-81D8-CC67AF7253AF">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=AE7FD3C7-2D8B-42D1-81D8-CC67AF7253AF/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=AE7FD3C7-2D8B-42D1-81D8-CC67AF7253AF">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=AE7FD3C7-2D8B-42D1-81D8-CC67AF7253AF">
 								WaterWorld (MyCard)
 								<span><p>WaterWorld @i-City, features water rides and games ranging from tame to wild in their propensity to provide thrills for the family.<br /><br />Get pampered as you laze in the Giant Jacuzzi, and slide down the Spiral and Rainbow slides while children splash around in Aladdin's Adventure Pool; or cruise the River Adventure passing through LED-lit grottoes while the splashing Wave pool awaits... <br /><br />Not to be missed! Challenge the ultimate Tornado... from a steep 160 ft launch tower, four tube-raft riders will race down&nbsp;hurtling through a 7-storey high funnel tilted at a 45 degree angle for the ultimate adrenaline rush. A&nbsp;First in ASEAN.</p>
 <p>&nbsp;<br /><br /><span style="font-family: Verdana, sans-serif;"><span style="font-size: 8.5pt;"><strong>Visit date</strong>: <strong>3 April&nbsp;</strong></span></span><strong><span style="font-family: Verdana, sans-serif;"><span style="font-size: 11.3333px;">until</span><span style="font-size: 8.5pt;">&nbsp;12 June 2017</span></span></strong><br /><br /></p>
@@ -3182,12 +3182,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=9D582251-B080-4577-A019-E7613965C000">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=9D582251-B080-4577-A019-E7613965C000">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=9D582251-B080-4577-A019-E7613965C000/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=9D582251-B080-4577-A019-E7613965C000">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=9D582251-B080-4577-A019-E7613965C000">
 								WaterWorld (Non-MyCard)
 								<span><p>WaterWorld @i-City, features water rides and games ranging from tame to wild in their propensity to provide thrills for the family.<br /><br />Get pampered as you laze in the Giant Jacuzzi, and slide down the Spiral and Rainbow slides while children splash around in Aladdin's Adventure Pool; or cruise the River Adventure passing through LED-lit grottoes while the splashing Wave pool awaits... <br /><br />Not to be missed! Challenge the ultimate Tornado... from a steep 160 ft launch tower, four tube-raft riders will race down&nbsp;hurtling through a 7-storey high funnel tilted at a 45 degree angle for the ultimate adrenaline rush. A&nbsp;First in ASEAN.</p>
 <p>&nbsp;<br /><br /><strong>Visit date</strong>: <strong>3 April</strong>&nbsp;<strong>until 12 June 2017</strong><br /><br /></p>
@@ -3251,12 +3251,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=5960FCC4-C452-4BD7-8D4F-75DCF854B1BF">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=5960FCC4-C452-4BD7-8D4F-75DCF854B1BF">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=5960FCC4-C452-4BD7-8D4F-75DCF854B1BF/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=5960FCC4-C452-4BD7-8D4F-75DCF854B1BF">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=5960FCC4-C452-4BD7-8D4F-75DCF854B1BF">
 								WaterWorld 4 to Go (Now - 12 June 2017)
 								<span><p>WaterWorld @i-City, features water rides and games ranging from tame to wild in their propensity to provide thrills for the family.</p>
 <p>Get <strong>4 person</strong> to <strong>Waterworld</strong> at RM82*</p>
@@ -3323,12 +3323,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=14DF6929-2185-4A60-A715-FF5BB09E0A8C">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=14DF6929-2185-4A60-A715-FF5BB09E0A8C">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=14DF6929-2185-4A60-A715-FF5BB09E0A8C/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=14DF6929-2185-4A60-A715-FF5BB09E0A8C">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=14DF6929-2185-4A60-A715-FF5BB09E0A8C">
 								Zero Deal - 2 Tier Carousel (2 June 2017)
 								<span><p>Zero deals is back !!&nbsp;</p>
 <p>Seize this opportunity and enliven i-City Theme Park this<strong>&nbsp;Ramadhan</strong><strong>&nbsp;!! </strong>Get free admission to<strong> 2 Tier Carousel&nbsp;</strong>this<strong>&nbsp;2 June 2017.&nbsp;</strong></p>
@@ -3422,12 +3422,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=9BF400A7-5C6C-405C-BA13-ADE094CF97D6">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=9BF400A7-5C6C-405C-BA13-ADE094CF97D6">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=9BF400A7-5C6C-405C-BA13-ADE094CF97D6/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=9BF400A7-5C6C-405C-BA13-ADE094CF97D6">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=9BF400A7-5C6C-405C-BA13-ADE094CF97D6">
 								Zero Deal - Pirate Kid (31 May 2017)
 								<span><p>Zero deals is back !!&nbsp;</p>
 <p>Seize this opportunity and enliven i-City Theme Park this<strong>&nbsp;Ramadhan</strong><strong>&nbsp;!! </strong>Get free admission to<strong>&nbsp;Pirate Kid&nbsp;</strong>this<strong>&nbsp;31 May 2017</strong>.</p>
@@ -3549,12 +3549,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=FBA7C225-9C0F-43DD-A370-8D612B816BAE">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=FBA7C225-9C0F-43DD-A370-8D612B816BAE">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=FBA7C225-9C0F-43DD-A370-8D612B816BAE/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=FBA7C225-9C0F-43DD-A370-8D612B816BAE">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=FBA7C225-9C0F-43DD-A370-8D612B816BAE">
 								Zero Deal - Pirate Ship (29 May 2017)
 								<span><p>Zero deals is back !!&nbsp;</p>
 <p>Seize this opportunity and enliven i-City Theme Park this<strong>&nbsp;Ramadhan</strong><strong>&nbsp;!! </strong>Get free admission to<strong>&nbsp;Pirate Ship&nbsp;</strong>this<strong> 29 May 2017</strong>.</p>
@@ -3648,12 +3648,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=39633F7F-4992-467C-964F-ACA7CBFFE20D">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=39633F7F-4992-467C-964F-ACA7CBFFE20D">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=39633F7F-4992-467C-964F-ACA7CBFFE20D/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=39633F7F-4992-467C-964F-ACA7CBFFE20D">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=39633F7F-4992-467C-964F-ACA7CBFFE20D">
 								Zero Deal - Space Mission (3 June 2017)
 								<span><p>Zero deals is back !!</p>
 <p>Seize this opportunity and enliven i-City Theme Park this<strong>&nbsp;Ramadhan</strong><strong>&nbsp;!! </strong>Get free admission to<strong>&nbsp;Space Mission&nbsp;</strong>this<strong>&nbsp;3 June 2017.&nbsp;</strong></p>
@@ -3747,12 +3747,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=63985760-E392-451C-8C03-20807630F0FE">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=63985760-E392-451C-8C03-20807630F0FE">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=63985760-E392-451C-8C03-20807630F0FE/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=63985760-E392-451C-8C03-20807630F0FE">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=63985760-E392-451C-8C03-20807630F0FE">
 								Zero Deal - Space Mission (30 May 2017)
 								<span><p>Zero deals is back !!</p>
 <p>Seize this opportunity and enliven i-City Theme Park this<strong>&nbsp;Ramadhan</strong><strong>&nbsp;!! </strong>Get free admission to<strong>&nbsp;Space Mission&nbsp;</strong>this<strong>&nbsp;30 May 2017.&nbsp;</strong></p>
@@ -3846,12 +3846,12 @@ function getCartCount() {
 					
 					<li>
 						<span>
-							<a class="photo" href="/icity/promotion/view.do?promotionId=D1C6AC12-935E-4FCC-8A34-6F000BA2276C">
+							<a class="photo" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=D1C6AC12-935E-4FCC-8A34-6F000BA2276C">
 								
 								
 								<img cover="927624" src="/icity/promotion/img.get?id=D1C6AC12-935E-4FCC-8A34-6F000BA2276C/1"/>
 							</a>
-							<a class="desc" href="/icity/promotion/view.do?promotionId=D1C6AC12-935E-4FCC-8A34-6F000BA2276C">
+							<a class="desc" href="/iticket.i-city.my/icity/promotion/view.do?promotionId=D1C6AC12-935E-4FCC-8A34-6F000BA2276C">
 								Zero Deal - Trick Art Museum (1 June 2017)
 								<span><p>Zero deals is back !!&nbsp;</p>
 <p>Seize this opportunity and enliven i-City Theme Park this<strong>&nbsp;Ramadhan</strong><strong>&nbsp;!! </strong>Get free admission to<strong>&nbsp;Trick Art Museum&nbsp;</strong>this<strong>&nbsp;1 June 2017</strong>.</p>
@@ -3952,7 +3952,7 @@ function getCartCount() {
 				</td>
 				<td rowspan="2" style="vertical-align:top; text-align:right; color: #666666;">
 					<div id="copyright">
-					Copyright © 2015. Best Compatible With Google Chrome & Internet Explorer
+					Copyright ï¿½ 2015. Best Compatible With Google Chrome & Internet Explorer
 					</div>
 				</td>
 			</tr>
