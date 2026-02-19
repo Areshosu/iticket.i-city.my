@@ -1,91 +1,108 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  
+
 <head>
 
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KQMTGNX');</script>
-<!-- End Google Tag Manager -->
-<meta name="google-site-verification" content="isKz78vifgUT5SNEFezLNqoVcBP5p0hLyaL-zPrKB6U" />
-<!-- Hotjar Tracking Code for / -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2775442,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KQMTGNX');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="google-site-verification" content="isKz78vifgUT5SNEFezLNqoVcBP5p0hLyaL-zPrKB6U" />
+  <!-- Hotjar Tracking Code for / -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 2775442, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
   <!-- Google tag (gtag.js) event - delayed navigation helper -->
-<script>
-  // Helper function to delay opening a URL until a gtag event is sent.
-  // Call it in response to an action that should navigate to a URL.
-  function gtagSendEvent(url) {
-    var callback = function () {
-      if (typeof url === 'string') {
-        window.location = url;
-      }
-    };
-    gtag('event', 'conversion_event_purchase', {
-      'event_callback': callback,
-      'event_timeout': 2000,
-      // <event_parameters>
-    });
-    return false;
-  }
-</script><!--Content in content_for_header -->
-<!--LayoutHub-Embed--><meta name="layouthub" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?display=swap&family=DM+Sans:100,200,300,400,500,600,700,800,900|Crimson+Text:100,200,300,400,500,600,700,800,900" /><link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSBpbnB1dCxib2R5IHRleHRhcmVhLGJvZHkgYnV0dG9uLGJvZHkgc2VsZWN0IHtmb250LWZhbWlseTogaW5oZXJpdDt9W2RhdGEtbGF5b3V0aHViPSJzZWN0aW9uIl0sIFtkYXRhLWxheW91dGh1Yj0ic2VjdGlvbiJdICoge3BhZGRpbmc6IDBweDttYXJnaW4tdG9wOiAwcHg7bWFyZ2luLWJvdHRvbTogMHB4O306cm9vdHstLWxoLWZvbnQtZmFtaWx5OiAiRE0gU2FucyIgIWltcG9ydGFudDstLWxoLXRpdGxlLWZvbnQtZmFtaWx5OiAiQ3JpbXNvbiBUZXh0IiAhaW1wb3J0YW50Oy0tbGgtZm9udC1zaXplOiAxNnB4ICFpbXBvcnRhbnQ7LS1saC1jb2xvcjogI0YyQjk4OCAhaW1wb3J0YW50Oy0tbGgtY29sb3ItcmdiOiAyNDIsIDE4NSwgMTM2ICFpbXBvcnRhbnQ7fWJvZHkgc2VjdGlvbltkYXRhLWxheW91dGh1Yj0ic2VjdGlvbiJdIHtjb2xvcjogIzdBN0E3QTtmb250LWZhbWlseTogIkRNIFNhbnMiICFpbXBvcnRhbnQ7Zm9udC1zaXplOiAxNnB4ICFpbXBvcnRhbnQ7fVtkYXRhLWxheW91dGh1Yj0ic2VjdGlvbiJdIGgxLCBbZGF0YS1sYXlvdXRodWI9InNlY3Rpb24iXSBoMiwgW2RhdGEtbGF5b3V0aHViPSJzZWN0aW9uIl0gaDMsIFtkYXRhLWxheW91dGh1Yj0ic2VjdGlvbiJdIGg0LCBbZGF0YS1sYXlvdXRodWI9InNlY3Rpb24iXSBoNSB7Y29sb3I6ICMxQTFBMUI7Zm9udC1mYW1pbHk6ICJDcmltc29uIFRleHQiICFpbXBvcnRhbnQ7fSBpbWcubGgtbGF6eTpub3QoW3NyY10pIHt2aXNpYmlsaXR5OiBoaWRkZW47fQ==" media="all">
-<!--LH--><!--/LayoutHub-Embed--><meta charset="utf-8">
+  <script>
+    // Helper function to delay opening a URL until a gtag event is sent.
+    // Call it in response to an action that should navigate to a URL.
+    function gtagSendEvent(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion_event_purchase', {
+        'event_callback': callback,
+        'event_timeout': 2000,
+        // <event_parameters>
+      });
+      return false;
+    }
+  </script><!--Content in content_for_header -->
+  <!--LayoutHub-Embed-->
+  <meta name="layouthub" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?display=swap&family=DM+Sans:100,200,300,400,500,600,700,800,900|Crimson+Text:100,200,300,400,500,600,700,800,900" />
+  <link rel="stylesheet" type="text/css"
+    href="data:text/css;base64,Ym9keSBpbnB1dCxib2R5IHRleHRhcmVhLGJvZHkgYnV0dG9uLGJvZHkgc2VsZWN0IHtmb250LWZhbWlseTogaW5oZXJpdDt9W2RhdGEtbGF5b3V0aHViPSJzZWN0aW9uIl0sIFtkYXRhLWxheW91dGh1Yj0ic2VjdGlvbiJdICoge3BhZGRpbmc6IDBweDttYXJnaW4tdG9wOiAwcHg7bWFyZ2luLWJvdHRvbTogMHB4O306cm9vdHstLWxoLWZvbnQtZmFtaWx5OiAiRE0gU2FucyIgIWltcG9ydGFudDstLWxoLXRpdGxlLWZvbnQtZmFtaWx5OiAiQ3JpbXNvbiBUZXh0IiAhaW1wb3J0YW50Oy0tbGgtZm9udC1zaXplOiAxNnB4ICFpbXBvcnRhbnQ7LS1saC1jb2xvcjogI0YyQjk4OCAhaW1wb3J0YW50Oy0tbGgtY29sb3ItcmdiOiAyNDIsIDE4NSwgMTM2ICFpbXBvcnRhbnQ7fWJvZHkgc2VjdGlvbltkYXRhLWxheW91dGh1Yj0ic2VjdGlvbiJdIHtjb2xvcjogIzdBN0E3QTtmb250LWZhbWlseTogIkRNIFNhbnMiICFpbXBvcnRhbnQ7Zm9udC1zaXplOiAxNnB4ICFpbXBvcnRhbnQ7fVtkYXRhLWxheW91dGh1Yj0ic2VjdGlvbiJdIGgxLCBbZGF0YS1sYXlvdXRodWI9InNlY3Rpb24iXSBoMiwgW2RhdGEtbGF5b3V0aHViPSJzZWN0aW9uIl0gaDMsIFtkYXRhLWxheW91dGh1Yj0ic2VjdGlvbiJdIGg0LCBbZGF0YS1sYXlvdXRodWI9InNlY3Rpb24iXSBoNSB7Y29sb3I6ICMxQTFBMUI7Zm9udC1mYW1pbHk6ICJDcmltc29uIFRleHQiICFpbXBvcnRhbnQ7fSBpbWcubGgtbGF6eTpub3QoW3NyY10pIHt2aXNpYmlsaXR5OiBoaWRkZW47fQ=="
+    media="all">
+  <!--LH--><!--/LayoutHub-Embed-->
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <meta name="theme-color" content="#ffffff">
 
-  
-    <link rel="shortcut icon" href="/iticket.i-city.my//iticket.i-city.my/cdn/shop/files/9_e3667aa1-2481-4ca0-a4ed-dfd0782016d1_32x32.png?v=1613759902" type="image/png" />
-  
+
+  <link rel="shortcut icon"
+    href="/iticket.i-city.my/cdn/shop/files/9_e3667aa1-2481-4ca0-a4ed-dfd0782016d1_32x32.png?v=1613759902"
+    type="image/png" />
+
 
   <link rel="canonical" href="/iticket.i-city.my/blogs/blog/5-unbelievable-christmas-traditions-around-the-world">
 
   <title>
-  5 Unbelievable Christmas Traditions Around The World &ndash; i-City
+    5 Unbelievable Christmas Traditions Around The World &ndash; i-City
   </title>
 
-  
-    <meta name="description" content="1. Christmas Dinner In The United Kingdom (Image: The Mirror) Confusingly, Christmas dinner in the UK is served between 1pm to 3pm on Christmas day which sounds more like a late lunch to us Malaysians. The reason for hosting their dinner parties so early in the day is to keep their evenings free to get drunk and watch ">
-  
+
+  <meta name="description"
+    content="1. Christmas Dinner In The United Kingdom (Image: The Mirror) Confusingly, Christmas dinner in the UK is served between 1pm to 3pm on Christmas day which sounds more like a late lunch to us Malaysians. The reason for hosting their dinner parties so early in the day is to keep their evenings free to get drunk and watch ">
+
 
   <!-- /snippets/social-meta-tags.liquid -->
 
 
 
 
-<meta property="og:site_name" content="i-City">
-<meta property="og:url" content="/blogs/blog/5-unbelievable-christmas-traditions-around-the-world">
-<meta property="og:title" content="5 Unbelievable Christmas Traditions Around The World">
-<meta property="og:type" content="article">
-<meta property="og:description" content="1. Christmas Dinner In The United Kingdom (Image: The Mirror) Confusingly, Christmas dinner in the UK is served between 1pm to 3pm on Christmas day which sounds more like a late lunch to us Malaysians. The reason for hosting their dinner parties so early in the day is to keep their evenings free to get drunk and watch ">
+  <meta property="og:site_name" content="i-City">
+  <meta property="og:url" content="/blogs/blog/5-unbelievable-christmas-traditions-around-the-world">
+  <meta property="og:title" content="5 Unbelievable Christmas Traditions Around The World">
+  <meta property="og:type" content="article">
+  <meta property="og:description"
+    content="1. Christmas Dinner In The United Kingdom (Image: The Mirror) Confusingly, Christmas dinner in the UK is served between 1pm to 3pm on Christmas day which sounds more like a late lunch to us Malaysians. The reason for hosting their dinner parties so early in the day is to keep their evenings free to get drunk and watch ">
 
-<meta property="og:image" content="http://iticket.i-city.my/cdn/shop/articles/Natale-Italia-main_1200x1200.jpg?v=1608630803">
-<meta property="og:image:secure_url" content="/cdn/shop/articles/Natale-Italia-main_1200x1200.jpg?v=1608630803">
+  <meta property="og:image"
+    content="http://iticket.i-city.my/cdn/shop/articles/Natale-Italia-main_1200x1200.jpg?v=1608630803">
+  <meta property="og:image:secure_url" content="/cdn/shop/articles/Natale-Italia-main_1200x1200.jpg?v=1608630803">
 
 
   <meta name="twitter:site" content="@icitymy">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="5 Unbelievable Christmas Traditions Around The World">
-<meta name="twitter:description" content="1. Christmas Dinner In The United Kingdom (Image: The Mirror) Confusingly, Christmas dinner in the UK is served between 1pm to 3pm on Christmas day which sounds more like a late lunch to us Malaysians. The reason for hosting their dinner parties so early in the day is to keep their evenings free to get drunk and watch ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="5 Unbelievable Christmas Traditions Around The World">
+  <meta name="twitter:description"
+    content="1. Christmas Dinner In The United Kingdom (Image: The Mirror) Confusingly, Christmas dinner in the UK is served between 1pm to 3pm on Christmas day which sounds more like a late lunch to us Malaysians. The reason for hosting their dinner parties so early in the day is to keep their evenings free to get drunk and watch ">
 
 
-  <link href="/iticket.i-city.my//iticket.i-city.my/cdn/shop/t/17/assets/theme.scss.css?v=93069425173435183441756454784" rel="stylesheet" type="text/css" media="all" />
+  <link href="/iticket.i-city.my/cdn/shop/t/17/assets/theme.scss.css?v=93069425173435183441756454784" rel="stylesheet"
+    type="text/css" media="all" />
 
   <script>
     window.theme = window.theme || {};
@@ -106,75 +123,85 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     };
   </script>
 
-  <script src="//iticket.i-city.my/cdn/shop/t/17/assets/lazysizes.min.js?v=155223123402716617051604656745" defer="defer"></script>
-
-  
-
-  <script src="//iticket.i-city.my/cdn/shop/t/17/assets/vendor.js?v=141188699437036237251604656746" defer="defer"></script>
-
-  <script src="//iticket.i-city.my/cdn/shopifycloud/storefront/assets/themes_support/option_selection-b017cd28.js" defer="defer"></script>
-
-  <script src="//iticket.i-city.my/cdn/shop/t/17/assets/theme.js?v=141903474060904050251604656758" defer="defer"></script>
-
-  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="facebook-domain-verification" content="ll7oc953pvdhidotqpo73kjmkasds3">
-<meta name="google-site-verification" content="PowtckecCeGVXce_PF6sVDIDeSKE31Sql5iva0wPEZ8">
-<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/24805042/digital_wallets/dialog">
-<link rel="alternate" type="application/atom+xml" title="Feed" href="/iticket.i-city.my/blogs/blog.atom" />
-<script async="async" src="/checkouts/internal/preloads.js?locale=en-MY"></script>
-<script id="shopify-features" type="application/json">{"accessToken":"ed21755bc843545e21df5ab51389e022","betas":["rich-media-storefront-analytics"],"domain":"iticket.i-city.my","predictiveSearch":true,"shopId":24805042,"locale":"en"}</script>
-<script>var Shopify = Shopify || {};
-Shopify.shop = "i-citymy.myshopify.com";
-Shopify.locale = "en";
-Shopify.currency = {"active":"MYR","rate":"1.0"};
-Shopify.country = "MY";
-Shopify.theme = {"name":"Boundless","id":115332546754,"schema_name":"Boundless","schema_version":"10.1.0","theme_store_id":766,"role":"main"};
-Shopify.theme.handle = "null";
-Shopify.theme.style = {"id":null,"handle":null};
-Shopify.cdnHost = "iticket.i-city.my/cdn";
-Shopify.routes = Shopify.routes || {};
-Shopify.routes.root = "/";</script>
-<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
-<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
-<script id="shop-js-analytics" type="application/json">{"pageType":"article"}</script>
-<script>(function() {
-  var isLoaded = false;
-  function asyncLoad() {
-    if (isLoaded) return;
-    isLoaded = true;
-    var urls = ["https:\/\/chimpstatic.com\/mcjs-connected\/js\/users\/0f731d116cb05b217ac56bc50\/5c83cd13b936dc87982c85cec.js?shop=i-citymy.myshopify.com","https:\/\/cdn.gethypervisual.com\/assets\/hypervisual.js?shop=i-citymy.myshopify.com","https:\/\/assets1.adroll.com\/shopify\/latest\/j\/shopify_rolling_bootstrap_v2.js?adroll_adv_id=FCXRHNBJONFOLCLT7I52KY\u0026adroll_pix_id=LNVTGSNEPZH4RIP7D6KM6Z\u0026shop=i-citymy.myshopify.com","https:\/\/apps.techdignity.com\/terms-and-conditions\/public\/js\/td-termsandcondition.js?shop=i-citymy.myshopify.com","https:\/\/chimpstatic.com\/mcjs-connected\/js\/users\/0f731d116cb05b217ac56bc50\/eb2dff8f55b4a69ed0139d257.js?shop=i-citymy.myshopify.com","\/\/cdn.secomapp.com\/promotionpopup\/cdn\/allshops\/i-citymy\/1597895064.js?shop=i-citymy.myshopify.com","\/\/www.powr.io\/powr.js?powr-token=i-citymy.myshopify.com\u0026external-type=shopify\u0026shop=i-citymy.myshopify.com","https:\/\/app.layouthub.com\/shopify\/layouthub.js?shop=i-citymy.myshopify.com","https:\/\/shopifycdn.aaawebstore.com\/announcement\/topbar-script_v4.js?shop=i-citymy.myshopify.com","https:\/\/wishlisthero-assets.revampco.com\/store-front\/bundle2.js?shop=i-citymy.myshopify.com","https:\/\/front.optimonk.com\/public\/70631\/shopify\/preload.js?shop=i-citymy.myshopify.com","https:\/\/cdn.hextom.com\/js\/quickannouncementbar.js?shop=i-citymy.myshopify.com","https:\/\/cdn.pushowl.com\/latest\/sdks\/pushowl-shopify.js?subdomain=i-citymy\u0026environment=production\u0026guid=b51d99f2-d856-4488-a14a-82666888e07d\u0026shop=i-citymy.myshopify.com"];
-    for (var i = 0; i < urls.length; i++) {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = urls[i];
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    }
-  };
-  if(window.attachEvent) {
-    window.attachEvent('onload', asyncLoad);
-  } else {
-    window.addEventListener('load', asyncLoad, false);
-  }
-})();</script>
-<script id="__st">var __st={"a":24805042,"offset":28800,"reqid":"644da546-e101-499d-bdaf-de4c84db74ea-1757527082","pageurl":"iticket.i-city.my\/blogs\/blog\/5-unbelievable-christmas-traditions-around-the-world","s":"articles-493158629570","u":"0a2207217e27","p":"article","rtyp":"article","rid":493158629570};</script>
-<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
-<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
-<script integrity="sha256-52AcMU7V7pcBOXWImdc/TAGTFKeNjmkeM1Pvks/DTgc=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//iticket.i-city.my/cdn/shopifycloud/storefront/assets/storefront/load_feature-81c60534.js" crossorigin="anonymous"></script>
-<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
-</script>
-<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
-  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
-</script>
-<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
-</script>
-
-<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+  <script src="//iticket.i-city.my/cdn/shop/t/17/assets/lazysizes.min.js?v=155223123402716617051604656745"
+    defer="defer"></script>
 
 
-    <script>
-    
-      
+
+  <script src="//iticket.i-city.my/cdn/shop/t/17/assets/vendor.js?v=141188699437036237251604656746"
+    defer="defer"></script>
+
+  <script src="//iticket.i-city.my/cdn/shopifycloud/storefront/assets/themes_support/option_selection-b017cd28.js"
+    defer="defer"></script>
+
+  <script src="//iticket.i-city.my/cdn/shop/t/17/assets/theme.js?v=141903474060904050251604656758"
+    defer="defer"></script>
+
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script>
+  <meta name="facebook-domain-verification" content="ll7oc953pvdhidotqpo73kjmkasds3">
+  <meta name="google-site-verification" content="PowtckecCeGVXce_PF6sVDIDeSKE31Sql5iva0wPEZ8">
+  <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/24805042/digital_wallets/dialog">
+  <link rel="alternate" type="application/atom+xml" title="Feed" href="/iticket.i-city.my/blogs/blog.atom" />
+  <script async="async" src="/checkouts/internal/preloads.js?locale=en-MY"></script>
+  <script id="shopify-features"
+    type="application/json">{"accessToken":"ed21755bc843545e21df5ab51389e022","betas":["rich-media-storefront-analytics"],"domain":"iticket.i-city.my","predictiveSearch":true,"shopId":24805042,"locale":"en"}</script>
+  <script>var Shopify = Shopify || {};
+    Shopify.shop = "i-citymy.myshopify.com";
+    Shopify.locale = "en";
+    Shopify.currency = { "active": "MYR", "rate": "1.0" };
+    Shopify.country = "MY";
+    Shopify.theme = { "name": "Boundless", "id": 115332546754, "schema_name": "Boundless", "schema_version": "10.1.0", "theme_store_id": 766, "role": "main" };
+    Shopify.theme.handle = "null";
+    Shopify.theme.style = { "id": null, "handle": null };
+    Shopify.cdnHost = "iticket.i-city.my/cdn";
+    Shopify.routes = Shopify.routes || {};
+    Shopify.routes.root = "/";</script>
+  <script type="module">!function (o) { (o.Shopify = o.Shopify || {}).modules = !0 }(window);</script>
+  <script>!function (o) { function n() { var o = []; function n() { o.push(Array.prototype.slice.apply(arguments)) } return n.q = o, n } var t = o.Shopify = o.Shopify || {}; t.loadFeatures = n(), t.autoloadFeatures = n() }(window);</script>
+  <script id="shop-js-analytics" type="application/json">{"pageType":"article"}</script>
+  <script>(function () {
+      var isLoaded = false;
+      function asyncLoad() {
+        if (isLoaded) return;
+        isLoaded = true;
+        var urls = ["https:\/\/chimpstatic.com\/mcjs-connected\/js\/users\/0f731d116cb05b217ac56bc50\/5c83cd13b936dc87982c85cec.js?shop=i-citymy.myshopify.com", "https:\/\/cdn.gethypervisual.com\/assets\/hypervisual.js?shop=i-citymy.myshopify.com", "https:\/\/assets1.adroll.com\/shopify\/latest\/j\/shopify_rolling_bootstrap_v2.js?adroll_adv_id=FCXRHNBJONFOLCLT7I52KY\u0026adroll_pix_id=LNVTGSNEPZH4RIP7D6KM6Z\u0026shop=i-citymy.myshopify.com", "https:\/\/apps.techdignity.com\/terms-and-conditions\/public\/js\/td-termsandcondition.js?shop=i-citymy.myshopify.com", "https:\/\/chimpstatic.com\/mcjs-connected\/js\/users\/0f731d116cb05b217ac56bc50\/eb2dff8f55b4a69ed0139d257.js?shop=i-citymy.myshopify.com", "\/\/cdn.secomapp.com\/promotionpopup\/cdn\/allshops\/i-citymy\/1597895064.js?shop=i-citymy.myshopify.com", "\/\/www.powr.io\/powr.js?powr-token=i-citymy.myshopify.com\u0026external-type=shopify\u0026shop=i-citymy.myshopify.com", "https:\/\/app.layouthub.com\/shopify\/layouthub.js?shop=i-citymy.myshopify.com", "https:\/\/shopifycdn.aaawebstore.com\/announcement\/topbar-script_v4.js?shop=i-citymy.myshopify.com", "https:\/\/wishlisthero-assets.revampco.com\/store-front\/bundle2.js?shop=i-citymy.myshopify.com", "https:\/\/front.optimonk.com\/public\/70631\/shopify\/preload.js?shop=i-citymy.myshopify.com", "https:\/\/cdn.hextom.com\/js\/quickannouncementbar.js?shop=i-citymy.myshopify.com", "https:\/\/cdn.pushowl.com\/latest\/sdks\/pushowl-shopify.js?subdomain=i-citymy\u0026environment=production\u0026guid=b51d99f2-d856-4488-a14a-82666888e07d\u0026shop=i-citymy.myshopify.com"];
+        for (var i = 0; i < urls.length; i++) {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = urls[i];
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+      };
+      if (window.attachEvent) {
+        window.attachEvent('onload', asyncLoad);
+      } else {
+        window.addEventListener('load', asyncLoad, false);
+      }
+    })();</script>
+  <script
+    id="__st">var __st = { "a": 24805042, "offset": 28800, "reqid": "644da546-e101-499d-bdaf-de4c84db74ea-1757527082", "pageurl": "iticket.i-city.my\/blogs\/blog\/5-unbelievable-christmas-traditions-around-the-world", "s": "articles-493158629570", "u": "0a2207217e27", "p": "article", "rtyp": "article", "rid": 493158629570 };</script>
+  <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+  <script
+    id="captcha-bootstrap">!function () { 'use strict'; const t = 'contact', e = 'account', n = 'new_comment', o = [[t, t], ['blogs', n], ['comments', n], [t, 'customer']], c = [[e, 'customer_login'], [e, 'guest_login'], [e, 'recover_customer_password'], [e, 'create_customer']], r = t => t.map((([t, e]) => `form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','), a = t => () => t ? [...document.querySelectorAll(t)].map((t => t.form)) : []; function s() { const t = [...o], e = r(t); return a(e) } const i = 'password', u = 'form_key', d = ['recaptcha-v3-token', 'g-recaptcha-response', 'h-captcha-response', i], f = () => { try { return window.sessionStorage } catch { return } }, m = '__shopify_v', _ = t => t.elements[u]; function p(t, e, n = !1) { try { const o = window.sessionStorage, c = JSON.parse(o.getItem(e)), { data: r } = function (t) { const { data: e, action: n } = t; return t[m] || n ? { data: e, action: n } : { data: t, action: n } }(c); for (const [e, n] of Object.entries(r)) t.elements[e] && (t.elements[e].value = n); n && o.removeItem(e) } catch (o) { console.error('form repopulation failed', { error: o }) } } const l = 'form_type', E = 'cptcha'; function T(t) { t.dataset[E] = !0 } const w = window, h = w.document, L = 'Shopify', v = 'ce_forms', y = 'captcha'; let A = !1; ((t, e) => { const n = (g = 'f06e6c50-85a8-45c8-87d0-21a2b65856fe', I = 'https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js', D = { infoText: 'Protected by hCaptcha', privacyText: 'Privacy', termsText: 'Terms' }, (t, e, n) => { const o = w[L][v], c = o.bindForm; if (c) return c(t, g, e, D).then(n); var r; o.q.push([[t, g, e, D], n]), r = I, A || (h.body.append(Object.assign(h.createElement('script'), { id: 'captcha-provider', async: !0, src: r })), A = !0) }); var g, I, D; w[L] = w[L] || {}, w[L][v] = w[L][v] || {}, w[L][v].q = [], w[L][y] = w[L][y] || {}, w[L][y].protect = function (t, e) { n(t, void 0, e), T(t) }, Object.freeze(w[L][y]), function (t, e, n, w, h, L) { const [v, y, A, g] = function (t, e, n) { const i = e ? o : [], u = t ? c : [], d = [...i, ...u], f = r(d), m = r(i), _ = r(d.filter((([t, e]) => n.includes(e)))); return [a(f), a(m), a(_), s()] }(w, h, L), I = t => { const e = t.target; return e instanceof HTMLFormElement ? e : e && e.form }, D = t => v().includes(t); t.addEventListener('submit', (t => { const e = I(t); if (!e) return; const n = D(e) && !e.dataset.hcaptchaBound && !e.dataset.recaptchaBound, o = _(e), c = g().includes(e) && (!o || !o.value); (n || c) && t.preventDefault(), c && !n && (function (t) { try { if (!f()) return; !function (t) { const e = f(); if (!e) return; const n = _(t); if (!n) return; const o = n.value; o && e.removeItem(o) }(t); const e = Array.from(Array(32), (() => Math.random().toString(36)[2])).join(''); !function (t, e) { _(t) || t.append(Object.assign(document.createElement('input'), { type: 'hidden', name: u })), t.elements[u].value = e }(t, e), function (t, e) { const n = f(); if (!n) return; const o = [...t.querySelectorAll(`input[type='${i}']`)].map((({ name: t }) => t)), c = [...d, ...o], r = {}; for (const [a, s] of new FormData(t).entries()) c.includes(a) || (r[a] = s); n.setItem(e, JSON.stringify({ [m]: 1, action: t.action, data: r })) }(t, e) } catch (e) { console.error('failed to persist form', e) } }(e), e.submit()) })); const S = (t, e) => { t && !t.dataset[E] && (n(t, e.some((e => e === t))), T(t)) }; for (const o of ['focusin', 'change']) t.addEventListener(o, (t => { const e = I(t); D(e) && S(e, y()) })); const B = e.get('form_key'), M = e.get(l), P = B && M; t.addEventListener('DOMContentLoaded', (() => { const t = y(); if (P) for (const e of t) e.elements[l].value === M && p(e, B);[...new Set([...A(), ...v().filter((t => 'true' === t.dataset.shopifyCaptcha))])].forEach((e => S(e, t))) })) }(h, new URLSearchParams(w.location.search), n, t, e, ['guest_login']) })(!0, !0) }();</script>
+  <script integrity="sha256-52AcMU7V7pcBOXWImdc/TAGTFKeNjmkeM1Pvks/DTgc=" data-source-attribution="shopify.loadfeatures"
+    defer="defer" src="//iticket.i-city.my/cdn/shopifycloud/storefront/assets/storefront/load_feature-81c60534.js"
+    crossorigin="anonymous"></script>
+  <script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify = Shopify || {}; Shopify.PaymentButton = Shopify.PaymentButton || { isStorefrontPortableWallets: !0, init: function () { window.Shopify.PaymentButton.init = function () { }; var t = document.createElement("script"); t.src = "/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js", t.type = "module", document.head.appendChild(t) } };
+  </script>
+  <script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
+    function portableWalletsHideBuyerConsent(e) { var t = document.getElementById("shopify-buyer-consent"), n = document.getElementById("shopify-subscription-policy-button"); t && n && (t.classList.add("hidden"), t.setAttribute("aria-hidden", "true"), n.removeEventListener("click", e)) } function portableWalletsShowBuyerConsent(e) { var t = document.getElementById("shopify-buyer-consent"), n = document.getElementById("shopify-subscription-policy-button"); t && n && (t.classList.remove("hidden"), t.removeAttribute("aria-hidden"), n.addEventListener("click", e)) } window.Shopify?.PaymentButton && (window.Shopify.PaymentButton.hideBuyerConsent = portableWalletsHideBuyerConsent, window.Shopify.PaymentButton.showBuyerConsent = portableWalletsShowBuyerConsent);
+  </script>
+  <script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded", (function () { function t() { return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout") } if (t()) Shopify.PaymentButton.init(); else { new MutationObserver((function (e, n) { t() && (Shopify.PaymentButton.init(), n.disconnect()) })).observe(document.body, { childList: !0, subtree: !0 }) } }));
+  </script>
+
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+
+  <script>
+
+
     window.ufeStore = {
       collections: [],
       tags: ''.split(','),
@@ -186,110 +213,145 @@ Shopify.routes.root = "/";</script>
       productAvailable: null,
       productMapping: []
     }
-    
-    
-      window.ufeStore.cartTotal = 0;
-      
-    
-    
-    
+
+
+    window.ufeStore.cartTotal = 0;
+
+
+
+
     window.isUfeInstalled = false;
     function ufeScriptLoader(scriptUrl) {
-        var element = document.createElement('script');
-        element.src = scriptUrl;
-        element.type = 'text/javascript';
-        document.getElementsByTagName('head')[0].appendChild(element);
+      var element = document.createElement('script');
+      element.src = scriptUrl;
+      element.type = 'text/javascript';
+      document.getElementsByTagName('head')[0].appendChild(element);
     }
-    if(window.isUfeInstalled) console.log('%c UFE: Funnel Engines ⚡️ Full Throttle  🦾😎!', 'font-weight: bold; letter-spacing: 2px; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", Arial, sans-serif;font-size: 20px;color: rgb(25, 124, 255); text-shadow: 2px 2px 0 rgb(62, 246, 255)');
-    if(!('noModule' in HTMLScriptElement.prototype) && window.isUfeInstalled) {
-        ufeScriptLoader('https://ufe.helixo.co/scripts/sdk.es5.min.js');
-        console.log('UFE: ES5 Script Loading');
+    if (window.isUfeInstalled) console.log('%c UFE: Funnel Engines ⚡️ Full Throttle  🦾😎!', 'font-weight: bold; letter-spacing: 2px; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", Arial, sans-serif;font-size: 20px;color: rgb(25, 124, 255); text-shadow: 2px 2px 0 rgb(62, 246, 255)');
+    if (!('noModule' in HTMLScriptElement.prototype) && window.isUfeInstalled) {
+      ufeScriptLoader('https://ufe.helixo.co/scripts/sdk.es5.min.js');
+      console.log('UFE: ES5 Script Loading');
     }
-    </script>
-    
-    
-    <!-- GSSTART Coming Soon code start. Do not change -->
-<script type="text/javascript"> gsProductByVariant = {};   gsProductCSID = ""; gsDefaultV = ""; </script><script type="text/javascript" src="https://gravity-software.com/js/shopify/pac_shop13712.js?v=gsa2c7ba9ee914cc3f2b21eb451037e5edxx"></script>
-<!-- Coming Soon code end. Do not change GSEND --><!--AZEXO_Header_Scripts--> <script>
-        var azh = {
-            shop: 'i-citymy.myshopify.com',
-            device_prefixes: {"lg":{"label":"Large device","width":false,"height":false,"container":1170,"min":1200},"md":{"label":"Medium device","width":992,"height":false,"container":970,"max":1199,"min":992},"sm":{"label":"Small device","width":768,"height":1150,"container":750,"max":991,"min":768},"xs":{"label":"Extra small device","width":320,"height":750,"max":767}},
-        };
-        var azexo = {
-          purchase_extension: 'Purchase extension',
-          strings: {
-            addToCart: "Add to cart",
-            soldOut: "Sold out",
-            unavailable: "Unavailable",
-            regularPrice: "Regular price",
-            sale: "Sale",
-            quantityMinimumMessage: "Quantity must be 1 or more",
-            unitPrice: "Unit price",
-            unitPriceSeparator: "per",
-            oneCartCount: "1 item",
-            otherCartCount: "[count] items",
-            quantityLabel: "Quantity: [count]"
-          },
-          moneyFormat: "RM{{amount}}"
-        }
-        </script><style>.az-container {
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-    }
-@media (min-width: 768px) {
-                    .az-container {
-                        max-width: 750px;
-                    }
-                }
-@media (min-width: 992px) {
-                    .az-container {
-                        max-width: 970px;
-                    }
-                }
-@media (min-width: 1200px) {
-                    .az-container {
-                        max-width: 1170px;
-                    }
-                }
-</style><script>azexo.extensions = [''];</script> <!--End_AZEXO_Header_Scripts--><!--AZEXO_Version_85--> 
+  </script>
 
-<script>window.__pagefly_analytics_settings__={"acceptTracking":true};</script>
- 
-<!-- Font icon for header icons -->
-<link href="https://de454z9efqcli.cloudfront.net/safe-icons/css/wishlisthero-icons.css" rel="stylesheet"/>
-<!-- Style for floating buttons and others -->
-<style type="text/css">
-    .wishlisthero-floating {
-        position: absolute;
-          right: auto;
-        left: 5px !important; 
-        top: 5px;
-        z-index: 23;
-        border-radius: 100%;
+
+  <!-- GSSTART Coming Soon code start. Do not change -->
+  <script type="text/javascript"> gsProductByVariant = {}; gsProductCSID = ""; gsDefaultV = ""; </script>
+  <script type="text/javascript"
+    src="https://gravity-software.com/js/shopify/pac_shop13712.js?v=gsa2c7ba9ee914cc3f2b21eb451037e5edxx"></script>
+  <!-- Coming Soon code end. Do not change GSEND --><!--AZEXO_Header_Scripts-->
+  <script>
+    var azh = {
+      shop: 'i-citymy.myshopify.com',
+      device_prefixes: { "lg": { "label": "Large device", "width": false, "height": false, "container": 1170, "min": 1200 }, "md": { "label": "Medium device", "width": 992, "height": false, "container": 970, "max": 1199, "min": 992 }, "sm": { "label": "Small device", "width": 768, "height": 1150, "container": 750, "max": 991, "min": 768 }, "xs": { "label": "Extra small device", "width": 320, "height": 750, "max": 767 } },
+    };
+    var azexo = {
+      purchase_extension: 'Purchase extension',
+      strings: {
+        addToCart: "Add to cart",
+        soldOut: "Sold out",
+        unavailable: "Unavailable",
+        regularPrice: "Regular price",
+        sale: "Sale",
+        quantityMinimumMessage: "Quantity must be 1 or more",
+        unitPrice: "Unit price",
+        unitPriceSeparator: "per",
+        oneCartCount: "1 item",
+        otherCartCount: "[count] items",
+        quantityLabel: "Quantity: [count]"
+      },
+      moneyFormat: "RM{{amount}}"
     }
- @media(min-width:1300px){
-   .wishlisthero-floating{
-         left: 50% !important; margin-left: -295px;  
- }
-}
+  </script>
+  <style>
+    .az-container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: 768px) {
+      .az-container {
+        max-width: 750px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .az-container {
+        max-width: 970px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .az-container {
+        max-width: 1170px;
+      }
+    }
+  </style>
+  <script>azexo.extensions = [''];</script> <!--End_AZEXO_Header_Scripts--><!--AZEXO_Version_85-->
+
+  <script>window.__pagefly_analytics_settings__ = { "acceptTracking": true };</script>
+
+  <!-- Font icon for header icons -->
+  <link href="https://de454z9efqcli.cloudfront.net/safe-icons/css/wishlisthero-icons.css" rel="stylesheet" />
+  <!-- Style for floating buttons and others -->
+  <style type="text/css">
+    .wishlisthero-floating {
+      position: absolute;
+      right: auto;
+      left: 5px !important;
+      top: 5px;
+      z-index: 23;
+      border-radius: 100%;
+    }
+
+    @media(min-width:1300px) {
+      .wishlisthero-floating {
+        left: 50% !important;
+        margin-left: -295px;
+      }
+    }
+
     .wishlisthero-floating:hover {
-        background-color: rgba(0, 0, 0, 0.05);
+      background-color: rgba(0, 0, 0, 0.05);
     }
 
     .wishlisthero-floating button {
-        font-size: 20px !important;
-        width: 40px !important;
-        padding: 0.125em 0 0 !important;
+      font-size: 20px !important;
+      width: 40px !important;
+      padding: 0.125em 0 0 !important;
     }
-.MuiTypography-body2 ,.MuiTypography-body1 ,.MuiTypography-caption ,.MuiTypography-button ,.MuiTypography-h1 ,.MuiTypography-h2 ,.MuiTypography-h3 ,.MuiTypography-h4 ,.MuiTypography-h5 ,.MuiTypography-h6 ,.MuiTypography-subtitle1 ,.MuiTypography-subtitle2 ,.MuiTypography-overline , MuiButton-root{
-     font-family: inherit !important; /*Roboto, Helvetica, Arial, sans-serif;*/
-}
-.MuiTypography-h1 , .MuiTypography-h2 , .MuiTypography-h3 , .MuiTypography-h4 , .MuiTypography-h5 , .MuiTypography-h6 , .MuiButton-root, .MuiCardHeader-title a{
-     font-family: Montserrat, sans-serif !important;
-}
+
+    .MuiTypography-body2,
+    .MuiTypography-body1,
+    .MuiTypography-caption,
+    .MuiTypography-button,
+    .MuiTypography-h1,
+    .MuiTypography-h2,
+    .MuiTypography-h3,
+    .MuiTypography-h4,
+    .MuiTypography-h5,
+    .MuiTypography-h6,
+    .MuiTypography-subtitle1,
+    .MuiTypography-subtitle2,
+    .MuiTypography-overline,
+    MuiButton-root {
+      font-family: inherit !important;
+      /*Roboto, Helvetica, Arial, sans-serif;*/
+    }
+
+    .MuiTypography-h1,
+    .MuiTypography-h2,
+    .MuiTypography-h3,
+    .MuiTypography-h4,
+    .MuiTypography-h5,
+    .MuiTypography-h6,
+    .MuiButton-root,
+    .MuiCardHeader-title a {
+      font-family: Montserrat, sans-serif !important;
+    }
 
     /****************************************************************************************/
     /* For some theme shared view need some spacing */
@@ -313,247 +375,248 @@ Shopify.routes.root = "/";</script>
     /****************************************************************************************/
     /* Customize the indicator when wishlist has items AND the normal indicator not working */
     .site-header__icon span.wishlist-hero-items-count {
-  position: absolute;
-  top: -10px;
-  right: -3px;
+      position: absolute;
+      top: -10px;
+      right: -3px;
 
-}
-@media screen and (max-width: 749px) {
-.site-header__icon span.wishlist-hero-items-count {
+    }
 
-right: -2px;
-top: -4.5px;
-}
-}
-</style>
-<script>window.wishlisthero_cartDotClasses=['cart-link','cart-bubble--visible', 'is-visible'];</script>
-<script>window.wishlisthero_buttonProdPageClasses=['btn product__form--add-to-cart', 'btn','btn--secondary-accent'];</script>
-<script>window.wishlisthero_buttonProdPageFontSize='auto';</script> <script type='text/javascript'>try{
-   window.WishListHero_setting = {"ButtonColor":"rgb(249, 127, 34)","IconColor":"rgba(255, 255, 255, 1)","IconType":"Heart","ButtonTextBeforeAdding":"ADD TO WISHLIST","ButtonTextAfterAdding":"ADDED TO WISHLIST","AnimationAfterAddition":"Blink","ButtonTextAddToCart":"ADD TO CART","ButtonTextAddAllToCart":"ADD ALL TO CART","ButtonTextRemoveAllToCart":"REMOVE ALL FROM WISHLIST","AddedProductNotificationText":"Product added to wishlist successfully","AddedProductToCartNotificationText":"Product added to cart successfully","ViewCartLinkText":"View Cart","SharePopup_TitleText":"Share My wishlist","SharePopup_shareBtnText":"Share","SharePopup_shareHederText":"Share on Social Networks","SharePopup_shareCopyText":"Or copy Wishlist link to share","SharePopup_shareCancelBtnText":"cancel","SharePopup_shareCopyBtnText":"Copy","SendEMailPopup_BtnText":"Send email","SendEMailPopup_FromText":"From Name","SendEMailPopup_ToText":"To email","SendEMailPopup_BodyText":"Body","SendEMailPopup_SendBtnText":"Send","SendEMailPopup_TitleText":"Send My Wishlist via Email","AddProductMessageText":"Are you sure you want to add all items to cart ?","RemoveProductMessageText":"Are you sure you want to remove this item from your wishlist ?","RemoveAllProductMessageText":"Are you sure you want to remove all items from your wishlist ?","RemovedProductNotificationText":"Product removed from wishlist successfully","AddAllOutOfStockProductNotificationText":"There seems to have been an issue adding items to cart, please try again later","RemovePopupOkText":"ok","RemovePopup_HeaderText":"ARE YOU SURE?","ViewWishlistText":"View wishlist","EmptyWishlistText":"There are no items in this wishlist","BuyNowButtonText":"Buy Now","BuyNowButtonColor":"rgb(144, 86, 162)","BuyNowTextButtonColor":"rgb(255, 255, 255)","Wishlist_Title":"My Wishlist","WishlistHeaderTitleAlignment":"Left","WishlistProductImageSize":"Normal","PriceColor":"rgb(0, 122, 206)","HeaderFontSize":"30","PriceFontSize":"18","ProductNameFontSize":"16","LaunchPointType":"menu_item","DisplayWishlistAs":"seprate_page","DisplayButtonAs":"button_with_icon","PopupSize":"md","HideAddToCartButton":false,"NoRedirectAfterAddToCart":false,"DisableGuestCustomer":false,"LoginPopupContent":"Please login to save your wishlist across devices.","LoginPopupLoginBtnText":"Login","LoginPopupContentFontSize":"20","NotificationPopupPosition":"right","WishlistButtonTextColor":"rgba(255, 255, 255, 1)","EnableRemoveFromWishlistAfterAddButtonText":"REMOVE FROM WISHLIST","_id":"5f7d6d536a86986de774a3f7","EnableCollection":false,"EnableShare":true,"RemovePowerBy":false,"EnableFBPixel":false,"DisapleApp":false,"FloatPointPossition":"bottom_right","HeartStateToggle":true,"HeaderMenuItemsIndicator":true,"EnableRemoveFromWishlistAfterAdd":true,"Shop":"i-citymy.myshopify.com","shop":"i-citymy.myshopify.com","Status":"Active","Plan":"FREE"};  
-  }catch(e){ console.error('Error loading config',e); } </script><script> var aaaAnnConfig = {"isWebpushPermission":"0","aaaAnnBarSetting":{"maxDate":"2021-01-20 10:21:17"},"aaaAnnWebpushMainModuleSetting":{"welcome":0,"abandonedCart":0,"priceDrop":0,"backInStock":0},"aaaAnnWebpushSetting":{"abandonedCart":0,"priceDrop":0,"backInStock":0}}</script>    
+    @media screen and (max-width: 749px) {
+      .site-header__icon span.wishlist-hero-items-count {
+
+        right: -2px;
+        top: -4.5px;
+      }
+    }
+  </style>
+  <script>window.wishlisthero_cartDotClasses = ['cart-link', 'cart-bubble--visible', 'is-visible'];</script>
+  <script>window.wishlisthero_buttonProdPageClasses = ['btn product__form--add-to-cart', 'btn', 'btn--secondary-accent'];</script>
+  <script>window.wishlisthero_buttonProdPageFontSize = 'auto';</script>
+  <script type='text/javascript'>try {
+      window.WishListHero_setting = { "ButtonColor": "rgb(249, 127, 34)", "IconColor": "rgba(255, 255, 255, 1)", "IconType": "Heart", "ButtonTextBeforeAdding": "ADD TO WISHLIST", "ButtonTextAfterAdding": "ADDED TO WISHLIST", "AnimationAfterAddition": "Blink", "ButtonTextAddToCart": "ADD TO CART", "ButtonTextAddAllToCart": "ADD ALL TO CART", "ButtonTextRemoveAllToCart": "REMOVE ALL FROM WISHLIST", "AddedProductNotificationText": "Product added to wishlist successfully", "AddedProductToCartNotificationText": "Product added to cart successfully", "ViewCartLinkText": "View Cart", "SharePopup_TitleText": "Share My wishlist", "SharePopup_shareBtnText": "Share", "SharePopup_shareHederText": "Share on Social Networks", "SharePopup_shareCopyText": "Or copy Wishlist link to share", "SharePopup_shareCancelBtnText": "cancel", "SharePopup_shareCopyBtnText": "Copy", "SendEMailPopup_BtnText": "Send email", "SendEMailPopup_FromText": "From Name", "SendEMailPopup_ToText": "To email", "SendEMailPopup_BodyText": "Body", "SendEMailPopup_SendBtnText": "Send", "SendEMailPopup_TitleText": "Send My Wishlist via Email", "AddProductMessageText": "Are you sure you want to add all items to cart ?", "RemoveProductMessageText": "Are you sure you want to remove this item from your wishlist ?", "RemoveAllProductMessageText": "Are you sure you want to remove all items from your wishlist ?", "RemovedProductNotificationText": "Product removed from wishlist successfully", "AddAllOutOfStockProductNotificationText": "There seems to have been an issue adding items to cart, please try again later", "RemovePopupOkText": "ok", "RemovePopup_HeaderText": "ARE YOU SURE?", "ViewWishlistText": "View wishlist", "EmptyWishlistText": "There are no items in this wishlist", "BuyNowButtonText": "Buy Now", "BuyNowButtonColor": "rgb(144, 86, 162)", "BuyNowTextButtonColor": "rgb(255, 255, 255)", "Wishlist_Title": "My Wishlist", "WishlistHeaderTitleAlignment": "Left", "WishlistProductImageSize": "Normal", "PriceColor": "rgb(0, 122, 206)", "HeaderFontSize": "30", "PriceFontSize": "18", "ProductNameFontSize": "16", "LaunchPointType": "menu_item", "DisplayWishlistAs": "seprate_page", "DisplayButtonAs": "button_with_icon", "PopupSize": "md", "HideAddToCartButton": false, "NoRedirectAfterAddToCart": false, "DisableGuestCustomer": false, "LoginPopupContent": "Please login to save your wishlist across devices.", "LoginPopupLoginBtnText": "Login", "LoginPopupContentFontSize": "20", "NotificationPopupPosition": "right", "WishlistButtonTextColor": "rgba(255, 255, 255, 1)", "EnableRemoveFromWishlistAfterAddButtonText": "REMOVE FROM WISHLIST", "_id": "5f7d6d536a86986de774a3f7", "EnableCollection": false, "EnableShare": true, "RemovePowerBy": false, "EnableFBPixel": false, "DisapleApp": false, "FloatPointPossition": "bottom_right", "HeartStateToggle": true, "HeaderMenuItemsIndicator": true, "EnableRemoveFromWishlistAfterAdd": true, "Shop": "i-citymy.myshopify.com", "shop": "i-citymy.myshopify.com", "Status": "Active", "Plan": "FREE" };
+    } catch (e) { console.error('Error loading config', e); } </script>
+  <script> var aaaAnnConfig = { "isWebpushPermission": "0", "aaaAnnBarSetting": { "maxDate": "2021-01-20 10:21:17" }, "aaaAnnWebpushMainModuleSetting": { "welcome": 0, "abandonedCart": 0, "priceDrop": 0, "backInStock": 0 }, "aaaAnnWebpushSetting": { "abandonedCart": 0, "priceDrop": 0, "backInStock": 0 } }</script>
 
 
- <link rel="dns-prefetch" href="https://cdn.secomapp.com/">
-<link rel="dns-prefetch" href="https://ajax.googleapis.com/">
-<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
-<link rel="preload" as="stylesheet" href="/iticket.i-city.my//iticket.i-city.my/cdn/shop/t/17/assets/sca-pp.css?v=178374312540912810101620618213">
+  <link rel="dns-prefetch" href="https://cdn.secomapp.com/">
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+  <link rel="preload" as="stylesheet"
+    href="/iticket.i-city.my/cdn/shop/t/17/assets/sca-pp.css?v=178374312540912810101620618213">
 
-<link rel="stylesheet" href="/iticket.i-city.my//iticket.i-city.my/cdn/shop/t/17/assets/sca-pp.css?v=178374312540912810101620618213">
- <script>
-  
+  <link rel="stylesheet" href="/iticket.i-city.my/cdn/shop/t/17/assets/sca-pp.css?v=178374312540912810101620618213">
+  <script>
+
     SCAPPLive = {};
-  
-  SCAPPShop = {};
-    
-  </script> 
-<script>var scaaffCheck = false;</script>
-<script src="//iticket.i-city.my/cdn/shop/t/17/assets/sca_affiliate.js?v=4222708016909776741632133277" type="text/javascript"></script>
-<script src='https://affilo.io/libs/affiliate.lib.js'></script> 
- <link href="/iticket.i-city.my//iticket.i-city.my/cdn/shop/t/17/assets/sectionhub.scss.css?v=102663406588194424831756260320" rel="stylesheet" type="text/css" media="all" /><link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 24805042,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "article"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
-<script id="web-pixels-manager-setup">(function e(e,d,r,n,o){if(void 0===o&&(o={}),!Boolean(null===(a=null===(i=window.Shopify)||void 0===i?void 0:i.analytics)||void 0===a?void 0:a.replayQueue)){var i,a;window.Shopify=window.Shopify||{};var t=window.Shopify;t.analytics=t.analytics||{};var s=t.analytics;s.replayQueue=[],s.publish=function(e,d,r){return s.replayQueue.push([e,d,r]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=function(){var e={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/},d=e.modern,r=e.legacy,n=navigator.userAgent;return n.match(d)?"modern":n.match(r)?"legacy":"unknown"}(),u="modern"===l?"modern":"legacy",c=(null!=n?n:{modern:"",legacy:""})[u],f=function(e){return[e.baseUrl,"/wpm","/b",e.hashVersion,"modern"===e.buildTarget?"m":"l",".js"].join("")}({baseUrl:d,hashVersion:r,buildTarget:u}),m=function(e){var d=e.version,r=e.bundleTarget,n=e.surface,o=e.pageUrl,i=e.monorailEndpoint;return{emit:function(e){var a=e.status,t=e.errorMsg,s=(new Date).getTime(),l=JSON.stringify({metadata:{event_sent_at_ms:s},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:d,bundle_target:r,page_url:o,status:a,surface:n,error_msg:t},metadata:{event_created_at_ms:s}}]});if(!i)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(i,l)}catch(e){}var u=new XMLHttpRequest;try{return u.open("POST",i,!0),u.setRequestHeader("Content-Type","text/plain"),u.send(l),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:r,bundleTarget:l,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint});try{o.browserTarget=l,function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,i=e.onerror,a=e.sri,t=e.scriptDataAttributes,s=void 0===t?{}:t,l=document.createElement("script"),u=document.querySelector("head"),c=document.querySelector("body");if(l.async=n,l.src=d,a&&(l.integrity=a,l.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{l.dataset[f]=s[f]}catch(e){}if(o&&l.addEventListener("load",o),i&&l.addEventListener("error",i),u)u.appendChild(l);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(l)}}({src:f,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null===(d=null===(e=window.Shopify)||void 0===e?void 0:e.analytics)||void 0===d?void 0:d.initialized)}()){var d=window.webPixelsManager.init(e)||void 0;if(d){var r=window.Shopify.analytics;r.replayQueue.forEach((function(e){var r=e[0],n=e[1],o=e[2];d.publishCustomEvent(r,n,o)})),r.replayQueue=[],r.publish=d.publishCustomEvent,r.visitor=d.visitor,r.initialized=!0}}},onerror:function(){return m.emit({status:"failed",errorMsg:"".concat(f," has failed to load")})},sri:function(e){var d=/^sha384-[A-Za-z0-9+/=]+$/;return"string"==typeof e&&d.test(e)}(c)?c:"",scriptDataAttributes:o}),m.emit({status:"loading"})}catch(e){m.emit({status:"failed",errorMsg:(null==e?void 0:e.message)||"Unknown error"})}}})({shopId: 24805042,storefrontBaseUrl: "",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["ac843a20"],webPixelsConfigList: [{"id":"1233518838","configuration":"{\"pixelCode\":\"D2HVLNRC77U0KS94G9L0\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"22e92c2ad45662f435e4801458fb78cc","type":"APP","apiClientId":4383523,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"531988726","configuration":"{\"config\":\"{\\\"google_tag_ids\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\",\\\"GT-T9B885S\\\"],\\\"target_country\\\":\\\"MY\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/A1QBCLa_044bENDNiN0o\\\"]},{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/8SIuCP6_044bENDNiN0o\\\"]},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/wk5LCPu_044bENDNiN0o\\\",\\\"MC-G65PEH5C0P\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/OHiDCLO_044bENDNiN0o\\\",\\\"MC-G65PEH5C0P\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/t1lpCLy_044bENDNiN0o\\\",\\\"MC-G65PEH5C0P\\\"]},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/rxVRCIHA044bENDNiN0o\\\"]},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/8gk-CLm_044bENDNiN0o\\\"]}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"b2a88bafab3e21179ed38636efcd8a93","type":"APP","apiClientId":1780363,"privacyPurposes":[]},{"id":"223019254","configuration":"{\"pixel_id\":\"1448227225274737\",\"pixel_type\":\"facebook_pixel\",\"metaapp_system_user_token\":\"-\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"6d8c3ef0426b37b2a9b717daeb719f58","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"75563254","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS"],"name":"Google Analytics tag (migrated)"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"i-City","paymentSettings":{"currencyCode":"MYR"},"myshopifyDomain":"i-citymy.myshopify.com","countryCode":"MY","storefrontUrl":"https:\/\/iticket.i-city.my"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},"/cdn","34aa2e14w3f927e5epb0fa551bm0cd3b5af",{"modern":"","legacy":""},{"shopId":"24805042","storefrontBaseUrl":"https:\/\/iticket.i-city.my","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"ac843a20\"]","isMerchantRequest":"false","hashVersion":"34aa2e14w3f927e5epb0fa551bm0cd3b5af","publish":"custom","events":"[[\"page_viewed\",{}]]"});</script><script>
-  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
-  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
-  window.ShopifyAnalytics.meta.currency = 'MYR';
-  var meta = {"page":{"pageType":"article","resourceType":"article","resourceId":493158629570}};
-  for (var attr in meta) {
-    window.ShopifyAnalytics.meta[attr] = meta[attr];
-  }
-</script>
-<script class="analytics">
-  (function () {
-    var customDocumentWrite = function(content) {
-      var jquery = null;
 
-      if (window.jQuery) {
-        jquery = window.jQuery;
-      } else if (window.Checkout && window.Checkout.$) {
-        jquery = window.Checkout.$;
-      }
+    SCAPPShop = {};
 
-      if (jquery) {
-        jquery('body').append(content);
-      }
-    };
-
-    var hasLoggedConversion = function(token) {
-      if (token) {
-        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
-      }
-      return false;
+  </script>
+  <script>var scaaffCheck = false;</script>
+  <script src="//iticket.i-city.my/cdn/shop/t/17/assets/sca_affiliate.js?v=4222708016909776741632133277"
+    type="text/javascript"></script>
+  <script src='https://affilo.io/libs/affiliate.lib.js'></script>
+  <link href="/iticket.i-city.my/cdn/shop/t/17/assets/sectionhub.scss.css?v=102663406588194424831756260320"
+    rel="stylesheet" type="text/css" media="all" />
+  <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+  <script>(function () { if ("sendBeacon" in navigator && "performance" in window) { try { var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description; } catch { var session_token_from_headers = undefined; } var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/); var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : ""; var session_token = session_token_from_headers || session_token_from_cookie || ""; function handle_abandonment_event(e) { var entries = performance.getEntries().filter(function (entry) { return /monorail-edge.shopifysvc.com/.test(entry.name); }); if (!window.abandonment_tracked && entries.length === 0) { window.abandonment_tracked = true; var currentMs = Date.now(); var navigation_start = performance.timing.navigationStart; var payload = { shop_id: 24805042, url: window.location.href, navigation_start, duration: currentMs - navigation_start, session_token, page_type: "article" }; window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({ schema_id: "online_store_buyer_site_abandonment/1.1", payload: payload, metadata: { event_created_at_ms: currentMs, event_sent_at_ms: currentMs } })); } } window.addEventListener('pagehide', handle_abandonment_event); } }());</script>
+  <script
+    id="web-pixels-manager-setup">(function e(e, d, r, n, o) { if (void 0 === o && (o = {}), !Boolean(null === (a = null === (i = window.Shopify) || void 0 === i ? void 0 : i.analytics) || void 0 === a ? void 0 : a.replayQueue)) { var i, a; window.Shopify = window.Shopify || {}; var t = window.Shopify; t.analytics = t.analytics || {}; var s = t.analytics; s.replayQueue = [], s.publish = function (e, d, r) { return s.replayQueue.push([e, d, r]), !0 }; try { self.performance.mark("wpm:start") } catch (e) { } var l = function () { var e = { modern: /Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/, legacy: /Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/ }, d = e.modern, r = e.legacy, n = navigator.userAgent; return n.match(d) ? "modern" : n.match(r) ? "legacy" : "unknown" }(), u = "modern" === l ? "modern" : "legacy", c = (null != n ? n : { modern: "", legacy: "" })[u], f = function (e) { return [e.baseUrl, "/wpm", "/b", e.hashVersion, "modern" === e.buildTarget ? "m" : "l", ".js"].join("") }({ baseUrl: d, hashVersion: r, buildTarget: u }), m = function (e) { var d = e.version, r = e.bundleTarget, n = e.surface, o = e.pageUrl, i = e.monorailEndpoint; return { emit: function (e) { var a = e.status, t = e.errorMsg, s = (new Date).getTime(), l = JSON.stringify({ metadata: { event_sent_at_ms: s }, events: [{ schema_id: "web_pixels_manager_load/3.1", payload: { version: d, bundle_target: r, page_url: o, status: a, surface: n, error_msg: t }, metadata: { event_created_at_ms: s } }] }); if (!i) return console && console.warn && console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."), !1; try { return self.navigator.sendBeacon.bind(self.navigator)(i, l) } catch (e) { } var u = new XMLHttpRequest; try { return u.open("POST", i, !0), u.setRequestHeader("Content-Type", "text/plain"), u.send(l), !0 } catch (e) { return console && console.warn && console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."), !1 } } } }({ version: r, bundleTarget: l, surface: e.surface, pageUrl: self.location.href, monorailEndpoint: e.monorailEndpoint }); try { o.browserTarget = l, function (e) { var d = e.src, r = e.async, n = void 0 === r || r, o = e.onload, i = e.onerror, a = e.sri, t = e.scriptDataAttributes, s = void 0 === t ? {} : t, l = document.createElement("script"), u = document.querySelector("head"), c = document.querySelector("body"); if (l.async = n, l.src = d, a && (l.integrity = a, l.crossOrigin = "anonymous"), s) for (var f in s) if (Object.prototype.hasOwnProperty.call(s, f)) try { l.dataset[f] = s[f] } catch (e) { } if (o && l.addEventListener("load", o), i && l.addEventListener("error", i), u) u.appendChild(l); else { if (!c) throw new Error("Did not find a head or body element to append the script"); c.appendChild(l) } }({ src: f, async: !0, onload: function () { if (!function () { var e, d; return Boolean(null === (d = null === (e = window.Shopify) || void 0 === e ? void 0 : e.analytics) || void 0 === d ? void 0 : d.initialized) }()) { var d = window.webPixelsManager.init(e) || void 0; if (d) { var r = window.Shopify.analytics; r.replayQueue.forEach((function (e) { var r = e[0], n = e[1], o = e[2]; d.publishCustomEvent(r, n, o) })), r.replayQueue = [], r.publish = d.publishCustomEvent, r.visitor = d.visitor, r.initialized = !0 } } }, onerror: function () { return m.emit({ status: "failed", errorMsg: "".concat(f, " has failed to load") }) }, sri: function (e) { var d = /^sha384-[A-Za-z0-9+/=]+$/; return "string" == typeof e && d.test(e) }(c) ? c : "", scriptDataAttributes: o }), m.emit({ status: "loading" }) } catch (e) { m.emit({ status: "failed", errorMsg: (null == e ? void 0 : e.message) || "Unknown error" }) } } })({ shopId: 24805042, storefrontBaseUrl: "", extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager", monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch", surface: "storefront-renderer", enabledBetaFlags: ["ac843a20"], webPixelsConfigList: [{ "id": "1233518838", "configuration": "{\"pixelCode\":\"D2HVLNRC77U0KS94G9L0\"}", "eventPayloadVersion": "v1", "runtimeContext": "STRICT", "scriptVersion": "22e92c2ad45662f435e4801458fb78cc", "type": "APP", "apiClientId": 4383523, "privacyPurposes": ["ANALYTICS", "MARKETING", "SALE_OF_DATA"] }, { "id": "531988726", "configuration": "{\"config\":\"{\\\"google_tag_ids\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\",\\\"GT-T9B885S\\\"],\\\"target_country\\\":\\\"MY\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/A1QBCLa_044bENDNiN0o\\\"]},{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/8SIuCP6_044bENDNiN0o\\\"]},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/wk5LCPu_044bENDNiN0o\\\",\\\"MC-G65PEH5C0P\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/OHiDCLO_044bENDNiN0o\\\",\\\"MC-G65PEH5C0P\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/t1lpCLy_044bENDNiN0o\\\",\\\"MC-G65PEH5C0P\\\"]},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/rxVRCIHA044bENDNiN0o\\\"]},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":[\\\"G-7RJ56BYLYH\\\",\\\"AW-10932594384\\\/8gk-CLm_044bENDNiN0o\\\"]}],\\\"enable_monitoring_mode\\\":false}\"}", "eventPayloadVersion": "v1", "runtimeContext": "OPEN", "scriptVersion": "b2a88bafab3e21179ed38636efcd8a93", "type": "APP", "apiClientId": 1780363, "privacyPurposes": [] }, { "id": "223019254", "configuration": "{\"pixel_id\":\"1448227225274737\",\"pixel_type\":\"facebook_pixel\",\"metaapp_system_user_token\":\"-\"}", "eventPayloadVersion": "v1", "runtimeContext": "OPEN", "scriptVersion": "6d8c3ef0426b37b2a9b717daeb719f58", "type": "APP", "apiClientId": 2329312, "privacyPurposes": ["ANALYTICS", "MARKETING", "SALE_OF_DATA"] }, { "id": "75563254", "eventPayloadVersion": "v1", "runtimeContext": "LAX", "scriptVersion": "1", "type": "CUSTOM", "privacyPurposes": ["ANALYTICS"], "name": "Google Analytics tag (migrated)" }, { "id": "shopify-app-pixel", "configuration": "{}", "eventPayloadVersion": "v1", "runtimeContext": "STRICT", "scriptVersion": "0450", "apiClientId": "shopify-pixel", "type": "APP", "privacyPurposes": ["ANALYTICS", "MARKETING"] }, { "id": "shopify-custom-pixel", "eventPayloadVersion": "v1", "runtimeContext": "LAX", "scriptVersion": "0450", "apiClientId": "shopify-pixel", "type": "CUSTOM", "privacyPurposes": ["ANALYTICS", "MARKETING"] }], isMerchantRequest: false, initData: { "shop": { "name": "i-City", "paymentSettings": { "currencyCode": "MYR" }, "myshopifyDomain": "i-citymy.myshopify.com", "countryCode": "MY", "storefrontUrl": "https:\/\/iticket.i-city.my" }, "customer": null, "cart": null, "checkout": null, "productVariants": [], "purchasingCompany": null }, }, "/cdn", "34aa2e14w3f927e5epb0fa551bm0cd3b5af", { "modern": "", "legacy": "" }, { "shopId": "24805042", "storefrontBaseUrl": "https:\/\/iticket.i-city.my", "extensionBaseUrl": "https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager", "surface": "storefront-renderer", "enabledBetaFlags": "[\"ac843a20\"]", "isMerchantRequest": "false", "hashVersion": "34aa2e14w3f927e5epb0fa551bm0cd3b5af", "publish": "custom", "events": "[[\"page_viewed\",{}]]" });</script>
+  <script>
+    window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+    window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+    window.ShopifyAnalytics.meta.currency = 'MYR';
+    var meta = { "page": { "pageType": "article", "resourceType": "article", "resourceId": 493158629570 } };
+    for (var attr in meta) {
+      window.ShopifyAnalytics.meta[attr] = meta[attr];
     }
+  </script>
+  <script class="analytics">
+    (function () {
+      var customDocumentWrite = function (content) {
+        var jquery = null;
 
-    var setCookieIfConversion = function(token) {
-      if (token) {
-        var twoMonthsFromNow = new Date(Date.now());
-        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
-
-        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
-      }
-    }
-
-    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
-    if (trekkie.integrations) {
-      return;
-    }
-    trekkie.methods = [
-      'identify',
-      'page',
-      'ready',
-      'track',
-      'trackForm',
-      'trackLink'
-    ];
-    trekkie.factory = function(method) {
-      return function() {
-        var args = Array.prototype.slice.call(arguments);
-        args.unshift(method);
-        trekkie.push(args);
-        return trekkie;
-      };
-    };
-    for (var i = 0; i < trekkie.methods.length; i++) {
-      var key = trekkie.methods[i];
-      trekkie[key] = trekkie.factory(key);
-    }
-    trekkie.load = function(config) {
-      trekkie.config = config || {};
-      trekkie.config.initialDocumentCookie = document.cookie;
-      var first = document.getElementsByTagName('script')[0];
-      var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.onerror = function(e) {
-        var scriptFallback = document.createElement('script');
-        scriptFallback.type = 'text/javascript';
-        scriptFallback.onerror = function(error) {
-                var Monorail = {
-      produce: function produce(monorailDomain, schemaId, payload) {
-        var currentMs = new Date().getTime();
-        var event = {
-          schema_id: schemaId,
-          payload: payload,
-          metadata: {
-            event_created_at_ms: currentMs,
-            event_sent_at_ms: currentMs
-          }
-        };
-        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
-      },
-      sendRequest: function sendRequest(endpointUrl, payload) {
-        // Try the sendBeacon API
-        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
-          var blobData = new window.Blob([payload], {
-            type: 'text/plain'
-          });
-
-          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
-            return true;
-          } // sendBeacon was not successful
-
-        } // XHR beacon
-
-        var xhr = new XMLHttpRequest();
-
-        try {
-          xhr.open('POST', endpointUrl);
-          xhr.setRequestHeader('Content-Type', 'text/plain');
-          xhr.send(payload);
-        } catch (e) {
-          console.log(e);
+        if (window.jQuery) {
+          jquery = window.jQuery;
+        } else if (window.Checkout && window.Checkout.$) {
+          jquery = window.Checkout.$;
         }
 
-        return false;
-      },
-      isIos12: function isIos12() {
-        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
-      }
-    };
-    Monorail.produce('monorail-edge.shopifysvc.com',
-      'trekkie_storefront_load_errors/1.1',
-      {shop_id: 24805042,
-      theme_id: 115332546754,
-      app_name: "storefront",
-      context_url: window.location.href,
-      source_url: "//iticket.i-city.my/cdn/s/trekkie.storefront.5a4f78eb26ea594ba1b5d72f179d68114c7cf8ca.min.js"});
-
-        };
-        scriptFallback.async = true;
-        scriptFallback.src = '//iticket.i-city.my/cdn/s/trekkie.storefront.5a4f78eb26ea594ba1b5d72f179d68114c7cf8ca.min.js';
-        first.parentNode.insertBefore(scriptFallback, first);
+        if (jquery) {
+          jquery('body').append(content);
+        }
       };
-      script.async = true;
-      script.src = '//iticket.i-city.my/cdn/s/trekkie.storefront.5a4f78eb26ea594ba1b5d72f179d68114c7cf8ca.min.js';
-      first.parentNode.insertBefore(script, first);
-    };
-    trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":24805042,"isMerchantRequest":null,"themeId":115332546754,"themeCityHash":"14949708451982293415","contentLanguage":"en","currency":"MYR","eventMetadataId":"b8523939-7d82-4741-a8ad-ef22acb6c49e"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
-    );
 
-    var loaded = false;
-    trekkie.ready(function() {
-      if (loaded) return;
-      loaded = true;
-
-      window.ShopifyAnalytics.lib = window.trekkie;
-
-      var originalDocumentWrite = document.write;
-      document.write = customDocumentWrite;
-      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
-      document.write = originalDocumentWrite;
-
-      window.ShopifyAnalytics.lib.page(null,{"pageType":"article","resourceType":"article","resourceId":493158629570,"shopifyEmitted":true});
-
-      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
-      var token = match? match[1]: undefined;
-      if (!hasLoggedConversion(token)) {
-        setCookieIfConversion(token);
-        
+      var hasLoggedConversion = function (token) {
+        if (token) {
+          return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+        }
+        return false;
       }
-    });
+
+      var setCookieIfConversion = function (token) {
+        if (token) {
+          var twoMonthsFromNow = new Date(Date.now());
+          twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+          document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+        }
+      }
+
+      var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+      if (trekkie.integrations) {
+        return;
+      }
+      trekkie.methods = [
+        'identify',
+        'page',
+        'ready',
+        'track',
+        'trackForm',
+        'trackLink'
+      ];
+      trekkie.factory = function (method) {
+        return function () {
+          var args = Array.prototype.slice.call(arguments);
+          args.unshift(method);
+          trekkie.push(args);
+          return trekkie;
+        };
+      };
+      for (var i = 0; i < trekkie.methods.length; i++) {
+        var key = trekkie.methods[i];
+        trekkie[key] = trekkie.factory(key);
+      }
+      trekkie.load = function (config) {
+        trekkie.config = config || {};
+        trekkie.config.initialDocumentCookie = document.cookie;
+        var first = document.getElementsByTagName('script')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.onerror = function (e) {
+          var scriptFallback = document.createElement('script');
+          scriptFallback.type = 'text/javascript';
+          scriptFallback.onerror = function (error) {
+            var Monorail = {
+              produce: function produce(monorailDomain, schemaId, payload) {
+                var currentMs = new Date().getTime();
+                var event = {
+                  schema_id: schemaId,
+                  payload: payload,
+                  metadata: {
+                    event_created_at_ms: currentMs,
+                    event_sent_at_ms: currentMs
+                  }
+                };
+                return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+              },
+              sendRequest: function sendRequest(endpointUrl, payload) {
+                // Try the sendBeacon API
+                if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+                  var blobData = new window.Blob([payload], {
+                    type: 'text/plain'
+                  });
+
+                  if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+                    return true;
+                  } // sendBeacon was not successful
+
+                } // XHR beacon
+
+                var xhr = new XMLHttpRequest();
+
+                try {
+                  xhr.open('POST', endpointUrl);
+                  xhr.setRequestHeader('Content-Type', 'text/plain');
+                  xhr.send(payload);
+                } catch (e) {
+                  console.log(e);
+                }
+
+                return false;
+              },
+              isIos12: function isIos12() {
+                return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+              }
+            };
+            Monorail.produce('monorail-edge.shopifysvc.com',
+              'trekkie_storefront_load_errors/1.1',
+              {
+                shop_id: 24805042,
+                theme_id: 115332546754,
+                app_name: "storefront",
+                context_url: window.location.href,
+                source_url: "//iticket.i-city.my/cdn/s/trekkie.storefront.5a4f78eb26ea594ba1b5d72f179d68114c7cf8ca.min.js"
+              });
+
+          };
+          scriptFallback.async = true;
+          scriptFallback.src = '//iticket.i-city.my/cdn/s/trekkie.storefront.5a4f78eb26ea594ba1b5d72f179d68114c7cf8ca.min.js';
+          first.parentNode.insertBefore(scriptFallback, first);
+        };
+        script.async = true;
+        script.src = '//iticket.i-city.my/cdn/s/trekkie.storefront.5a4f78eb26ea594ba1b5d72f179d68114c7cf8ca.min.js';
+        first.parentNode.insertBefore(script, first);
+      };
+      trekkie.load(
+        { "Trekkie": { "appName": "storefront", "development": false, "defaultAttributes": { "shopId": 24805042, "isMerchantRequest": null, "themeId": 115332546754, "themeCityHash": "14949708451982293415", "contentLanguage": "en", "currency": "MYR", "eventMetadataId": "b8523939-7d82-4741-a8ad-ef22acb6c49e" }, "isServerSideCookieWritingEnabled": true, "monorailRegion": "shop_domain" }, "Session Attribution": {}, "S2S": { "facebookCapiEnabled": false, "source": "trekkie-storefront-renderer", "apiClientId": 580111 } }
+      );
+
+      var loaded = false;
+      trekkie.ready(function () {
+        if (loaded) return;
+        loaded = true;
+
+        window.ShopifyAnalytics.lib = window.trekkie;
+
+        var originalDocumentWrite = document.write;
+        document.write = customDocumentWrite;
+        try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch (error) { };
+        document.write = originalDocumentWrite;
+
+        window.ShopifyAnalytics.lib.page(null, { "pageType": "article", "resourceType": "article", "resourceId": 493158629570, "shopifyEmitted": true });
+
+        var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+        var token = match ? match[1] : undefined;
+        if (!hasLoggedConversion(token)) {
+          setCookieIfConversion(token);
+
+        }
+      });
 
 
-        var eventsListenerScript = document.createElement('script');
-        eventsListenerScript.async = true;
-        eventsListenerScript.src = "//iticket.i-city.my/cdn/shopifycloud/storefront/assets/shop_events_listener-8675b082.js";
-        document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "//iticket.i-city.my/cdn/shopifycloud/storefront/assets/shop_events_listener-8675b082.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
 
-})();</script>
+    })();</script>
   <script>
-  if (!window.ga || (window.ga && typeof window.ga !== 'function')) {
-    window.ga = function ga() {
-      (window.ga.q = window.ga.q || []).push(arguments);
+    if (!window.ga || (window.ga && typeof window.ga !== 'function')) {
+      window.ga = function ga() {
+        (window.ga.q = window.ga.q || []).push(arguments);
+        if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+          window.Shopify.analytics.publish("ga_stub_called", {}, { sendTo: "google_osp_migration" });
+        }
+        console.error("Shopify's Google Analytics stub called with:", Array.from(arguments), "\nSee https://help.shopify.com/manual/promoting-marketing/pixels/pixel-migration#google for more information.");
+      };
       if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
-        window.Shopify.analytics.publish("ga_stub_called", {}, {sendTo: "google_osp_migration"});
+        window.Shopify.analytics.publish("ga_stub_initialized", {}, { sendTo: "google_osp_migration" });
       }
-      console.error("Shopify's Google Analytics stub called with:", Array.from(arguments), "\nSee https://help.shopify.com/manual/promoting-marketing/pixels/pixel-migration#google for more information.");
-    };
-    if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
-      window.Shopify.analytics.publish("ga_stub_initialized", {}, {sendTo: "google_osp_migration"});
     }
-  }
-</script>
-<script
-  defer
-  src="/cdn/shopifycloud/perf-kit/shopify-perf-kit-2.0.7.min.js"
-  data-application="storefront-renderer"
-  data-shop-id="24805042"
-  data-render-region="gcp-us-east1"
-  data-page-type="article"
-  data-theme-instance-id="115332546754"
-  data-theme-name="Boundless"
-  data-theme-version="10.1.0"
-  data-monorail-region="shop_domain"
-  data-resource-timing-sampling-rate="10"
-  data-shs="true"
-  data-shs-beacon="true"
-></script>
-</head> 
+  </script>
+  <script defer src="/cdn/shopifycloud/perf-kit/shopify-perf-kit-2.0.7.min.js" data-application="storefront-renderer"
+    data-shop-id="24805042" data-render-region="gcp-us-east1" data-page-type="article"
+    data-theme-instance-id="115332546754" data-theme-name="Boundless" data-theme-version="10.1.0"
+    data-monorail-region="shop_domain" data-resource-timing-sampling-rate="10" data-shs="true"
+    data-shs-beacon="true"></script>
+</head>
 
 <body id="5-unbelievable-christmas-traditions-around-the-world" class="template-article">
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQMTGNX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQMTGNX" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div id="SearchDrawer" class="search-bar drawer drawer--top">
     <div class="search-bar__table">
       <form action="/search" method="get" class="search-bar__table-cell search-bar__form" role="search">
@@ -565,7 +628,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </button>
           </div>
           <div class="search-bar__table-cell">
-            <input type="search" id="SearchInput" name="q" value="" placeholder="Search our store" aria-label="Search our store" class="search-bar__input">
+            <input type="search" id="SearchInput" name="q" value="" placeholder="Search our store"
+              aria-label="Search our store" class="search-bar__input">
           </div>
         </div>
       </form>
@@ -578,114 +642,117 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
   <div id="NavDrawer" class="drawer drawer--left">
-  <div id="shopify-section-sidebar-menu" class="shopify-section sidebar-menu-section"><div class="drawer__header" data-section-id="sidebar-menu" data-section-type="sidebar-menu-section">
-  <div class="drawer__close">
-    <button type="button" class="drawer__close-button js-drawer-close">
-      <span class="icon icon-x" aria-hidden="true"></span>
-      <span class="icon__fallback-text">Close menu</span>
-    </button>
-  </div>
-</div>
-<div class="drawer__inner">
-  <ul class="drawer-nav">
-    
-      
-      
-        <li class="drawer-nav__item">
-          <a href="/iticket.i-city.my/" class="drawer-nav__link h2">Home</a>
-        </li>
-      
-    
-      
-      
-        <li class="drawer-nav__item">
-          <a href="/iticket.i-city.my/collections/all" class="drawer-nav__link h2">Packages</a>
-        </li>
-      
-    
-      
-      
-        <li class="drawer-nav__item">
-          <a href="/iticket.i-city.my/pages/theme-park-operating-hours" class="drawer-nav__link h2">Operating Hours</a>
-        </li>
-      
-    
-      
-      
-        <li class="drawer-nav__item">
-          <a href="/iticket.i-city.my/pages/ticket-pricing" class="drawer-nav__link h2">Ticket Pricing</a>
-        </li>
-      
-    
-      
-      
-        <li class="drawer-nav__item">
-          <a href="/iticket.i-city.my/pages/terms-and-conditions" class="drawer-nav__link h2">Rides Terms & Conditions</a>
-        </li>
-      
-    
+    <div id="shopify-section-sidebar-menu" class="shopify-section sidebar-menu-section">
+      <div class="drawer__header" data-section-id="sidebar-menu" data-section-type="sidebar-menu-section">
+        <div class="drawer__close">
+          <button type="button" class="drawer__close-button js-drawer-close">
+            <span class="icon icon-x" aria-hidden="true"></span>
+            <span class="icon__fallback-text">Close menu</span>
+          </button>
+        </div>
+      </div>
+      <div class="drawer__inner">
+        <ul class="drawer-nav">
 
-    <li class="drawer-nav__spacer"></li>
 
-    
-      
-        <li class="drawer-nav__item drawer-nav__item--secondary">
-          <a href="/iticket.i-city.my/account/login" id="customer_login_link">Log in</a>
-        </li>
-        <li class="drawer-nav__item drawer-nav__item--secondary">
-          <a href="/iticket.i-city.my/account/register" id="customer_register_link">Create account</a>
-        </li>
-      
-    
-    
-  </ul>
 
-  <ul class="list--inline social-icons social-icons--drawer">
-    
-      <li>
-        <a href="https://twitter.com/icitymy" title="i-City on Twitter">
-          <span class="icon icon-twitter" aria-hidden="true"></span>
-          <span class="visually-hidden">Twitter</span>
-        </a>
-      </li>
-    
-    
-      <li>
-        <a href="https://www.facebook.com/icitymy" title="i-City on Facebook">
-          <span class="icon icon-facebook" aria-hidden="true"></span>
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-    
-    
-    
-    
-      <li>
-        <a href="https://www.instagram.com/icitymalaysia/" title="i-City on Instagram">
-          <span class="icon icon-instagram" aria-hidden="true"></span>
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-    
-    
-    
-    
-      <li>
-        <a href="https://www.youtube.com/c/iCityMalaysia/featured" title="i-City on YouTube">
-          <span class="icon icon-youtube" aria-hidden="true"></span>
-          <span class="visually-hidden">YouTube</span>
-        </a>
-      </li>
-    
-    
-    
-  </ul>
-</div>
+          <li class="drawer-nav__item">
+            <a href="/iticket.i-city.my/" class="drawer-nav__link h2">Home</a>
+          </li>
 
 
 
 
-</div>
+          <li class="drawer-nav__item">
+            <a href="/iticket.i-city.my/collections/all" class="drawer-nav__link h2">Packages</a>
+          </li>
+
+
+
+
+          <li class="drawer-nav__item">
+            <a href="/iticket.i-city.my/pages/theme-park-operating-hours" class="drawer-nav__link h2">Operating
+              Hours</a>
+          </li>
+
+
+
+
+          <li class="drawer-nav__item">
+            <a href="/iticket.i-city.my/pages/ticket-pricing" class="drawer-nav__link h2">Ticket Pricing</a>
+          </li>
+
+
+
+
+          <li class="drawer-nav__item">
+            <a href="/iticket.i-city.my/pages/terms-and-conditions" class="drawer-nav__link h2">Rides Terms &
+              Conditions</a>
+          </li>
+
+
+
+          <li class="drawer-nav__spacer"></li>
+
+
+
+          <li class="drawer-nav__item drawer-nav__item--secondary">
+            <a href="/iticket.i-city.my/account/login" id="customer_login_link">Log in</a>
+          </li>
+          <li class="drawer-nav__item drawer-nav__item--secondary">
+            <a href="/iticket.i-city.my/account/register" id="customer_register_link">Create account</a>
+          </li>
+
+
+
+        </ul>
+
+        <ul class="list--inline social-icons social-icons--drawer">
+
+          <li>
+            <a href="https://twitter.com/icitymy" title="i-City on Twitter">
+              <span class="icon icon-twitter" aria-hidden="true"></span>
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="https://www.facebook.com/icitymy" title="i-City on Facebook">
+              <span class="icon icon-facebook" aria-hidden="true"></span>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+
+
+
+
+          <li>
+            <a href="https://www.instagram.com/icitymalaysia/" title="i-City on Instagram">
+              <span class="icon icon-instagram" aria-hidden="true"></span>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+
+
+
+
+          <li>
+            <a href="https://www.youtube.com/c/iCityMalaysia/featured" title="i-City on YouTube">
+              <span class="icon icon-youtube" aria-hidden="true"></span>
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+
+
+
+        </ul>
+      </div>
+
+
+
+
+    </div>
   </div>
   <div id="CartDrawer" class="drawer drawer--right drawer--has-fixed-footer">
     <div class="drawer__header">
@@ -703,341 +770,395 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div id="PageContainer">
-  <div id="shopify-section-announcement-bar" class="shopify-section">
+    <div id="shopify-section-announcement-bar" class="shopify-section">
 
-</div>
+    </div>
 
     <div class="site-header-wrapper">
       <div class="site-header-container">
-        <div id="shopify-section-header" class="shopify-section header-section"><style>
-  .site-header__logo img {
-    max-width: 180px;
-  }
-  @media screen and (max-width: 749px) {
-    .site-header__logo img {
-      max-width: 100%;
-    }
-  }
-</style>
+        <div id="shopify-section-header" class="shopify-section header-section">
+          <style>
+            .site-header__logo img {
+              max-width: 180px;
+            }
 
-<header class="site-header" role="banner" data-section-id="header" data-section-type="header-section">
-  <div class="grid grid--no-gutters grid--table site-header__inner">
-    <div class="grid__item one-third medium-up--one-sixth">
-      <button type="button" class="site-header__link text-link site-header__toggle-nav js-drawer-open-left">
-        <span class="icon icon-hamburger" aria-hidden="true"></span>
-        <span class="icon__fallback-text">Menu</span>
-      </button>
-    </div>
-    <div class="grid__item one-third medium-up--two-thirds">
-      <div class="site-header__logo h1" itemscope itemtype="http://schema.org/Organization"><a href="/iticket.i-city.my/" itemprop="url" class="site-header__logo-link">
-              
-              <img class="site-header__logo-image" src="//iticket.i-city.my/cdn/shop/files/New-i-City-Logo-Black-wef-2021-06-17__vector_1a5695fd-00b5-4634-9608-8605bcc90b2d_180x.png?v=1669005556"
-              srcset="//iticket.i-city.my/cdn/shop/files/New-i-City-Logo-Black-wef-2021-06-17__vector_1a5695fd-00b5-4634-9608-8605bcc90b2d_180x.png?v=1669005556 1x, //iticket.i-city.my/cdn/shop/files/New-i-City-Logo-Black-wef-2021-06-17__vector_1a5695fd-00b5-4634-9608-8605bcc90b2d_180x@2x.png?v=1669005556 2x" alt="i-City" itemprop="logo">
-            </a></div>
-    </div>
+            @media screen and (max-width: 749px) {
+              .site-header__logo img {
+                max-width: 100%;
+              }
+            }
+          </style>
 
-    <div class="grid__item one-third medium-up--one-sixth text-right">
-      <a href="/iticket.i-city.my/search" class="site-header__link site-header__search js-drawer-open-top">
-        <span class="icon icon-search" aria-hidden="true"></span>
-        <span class="icon__fallback-text">Search</span>
-      </a>
-      <a href="/iticket.i-city.my/cart" class="site-header__link site-header__cart cart-link js-drawer-open-right">
-        <span class="icon icon-cart" aria-hidden="true"></span>
-        <span class="icon__fallback-text">Cart</span>
-      </a>
-    </div>
-  </div>
-</header>
+          <header class="site-header" role="banner" data-section-id="header" data-section-type="header-section">
+            <div class="grid grid--no-gutters grid--table site-header__inner">
+              <div class="grid__item one-third medium-up--one-sixth">
+                <button type="button" class="site-header__link text-link site-header__toggle-nav js-drawer-open-left">
+                  <span class="icon icon-hamburger" aria-hidden="true"></span>
+                  <span class="icon__fallback-text">Menu</span>
+                </button>
+              </div>
+              <div class="grid__item one-third medium-up--two-thirds">
+                <div class="site-header__logo h1" itemscope itemtype="http://schema.org/Organization"><a
+                    href="/iticket.i-city.my/" itemprop="url" class="site-header__logo-link">
+
+                    <img class="site-header__logo-image"
+                      src="//iticket.i-city.my/cdn/shop/files/New-i-City-Logo-Black-wef-2021-06-17__vector_1a5695fd-00b5-4634-9608-8605bcc90b2d_180x.png?v=1669005556"
+                      srcset="//iticket.i-city.my/cdn/shop/files/New-i-City-Logo-Black-wef-2021-06-17__vector_1a5695fd-00b5-4634-9608-8605bcc90b2d_180x.png?v=1669005556 1x, //iticket.i-city.my/cdn/shop/files/New-i-City-Logo-Black-wef-2021-06-17__vector_1a5695fd-00b5-4634-9608-8605bcc90b2d_180x@2x.png?v=1669005556 2x"
+                      alt="i-City" itemprop="logo">
+                  </a></div>
+              </div>
+
+              <div class="grid__item one-third medium-up--one-sixth text-right">
+                <a href="/iticket.i-city.my/search" class="site-header__link site-header__search js-drawer-open-top">
+                  <span class="icon icon-search" aria-hidden="true"></span>
+                  <span class="icon__fallback-text">Search</span>
+                </a>
+                <a href="/iticket.i-city.my/cart"
+                  class="site-header__link site-header__cart cart-link js-drawer-open-right">
+                  <span class="icon icon-cart" aria-hidden="true"></span>
+                  <span class="icon__fallback-text">Cart</span>
+                </a>
+              </div>
+            </div>
+          </header>
 
 
 
-</div>
+        </div>
 
         <div class="action-area"><!-- action bar section -->
-<div id="shopify-section-action-bar" class="shopify-section action-bar-section"><!-- snippets/action-bar.liquid -->
+          <div id="shopify-section-action-bar" class="shopify-section action-bar-section">
+            <!-- snippets/action-bar.liquid -->
 
 
 
 
 
 
-  
-  <div class="action-bar-wrapper  " data-section-id="action-bar" data-section-type="action-bar-section">
+
+            <div class="action-bar-wrapper  " data-section-id="action-bar" data-section-type="action-bar-section">
 
 
-    <nav class="action-bar action-bar--has-menu" role="presentation">
-      <ul class="action-bar__menu--main action-bar__menu list--inline  action-bar--show" id="SiteNav" role="navigation">
-        
-        
-          
-          
-            <li class="action-bar__menu-item ">
-              <a href="/iticket.i-city.my/" class="action-bar__link">Home</a>
-            </li>
-          
-        
-          
-          
-            
-            <li class="action-bar__menu-item action-bar--has-dropdown" data-child-list-handle="packages" >
-              <a href="/iticket.i-city.my/collections/all" class="action-bar__link" aria-controls="Packages">Packages</a>
-            </li>
-          
-        
-          
-          
-            <li class="action-bar__menu-item ">
-              <a href="/iticket.i-city.my/pages/theme-park-info" class="action-bar__link">Operating Hours</a>
-            </li>
-          
-        
-          
-          
-            <li class="action-bar__menu-item ">
-              <a href="/iticket.i-city.my/pages/race-karting-team-building" class="action-bar__link">Race Karting Group Package</a>
-            </li>
-          
-        
-          
-          
-            <li class="action-bar__menu-item ">
-              <a href="/iticket.i-city.my/pages/team-building" class="action-bar__link">HRDF Team Building On ICE</a>
-            </li>
-          
-        
-      </ul>
-
-      
-        
-        
-      
-        
-        
-          <ul class="action-bar__menu--sub action-bar__menu list--inline  " id="Packages" data-child-list-handle="packages" role="navigation">
-            <li>
-              <button type="button" class="btn action-bar__back action-bar__link" aria-controls="SiteNav">
-                <span class="icon icon-arrow-left" aria-hidden="true"></span>
-                <span class="icon__fallback-text">Back to site navigation</span>
-              </button>
-            </li>
-            
-              <li class="action-bar__menu-item ">
-                <a href="/iticket.i-city.my/pages/ticket-pricing" class="action-bar__link">Ticket Pricing</a>
-              </li>
-            
-              <li class="action-bar__menu-item ">
-                <a href="/iticket.i-city.my/pages/terms-and-conditions" class="action-bar__link">Terms and Conditions</a>
-              </li>
-            
-              <li class="action-bar__menu-item ">
-                <a href="/iticket.i-city.my/pages/how-to-buy-through-website" class="action-bar__link">Guide</a>
-              </li>
-            
-          </ul>
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-    </nav>
-  </div>
+              <nav class="action-bar action-bar--has-menu" role="presentation">
+                <ul class="action-bar__menu--main action-bar__menu list--inline  action-bar--show" id="SiteNav"
+                  role="navigation">
 
 
 
 
-</div>
-</div>
+                  <li class="action-bar__menu-item ">
+                    <a href="/iticket.i-city.my/" class="action-bar__link">Home</a>
+                  </li>
+
+
+
+
+
+                  <li class="action-bar__menu-item action-bar--has-dropdown" data-child-list-handle="packages">
+                    <a href="/iticket.i-city.my/collections/all" class="action-bar__link"
+                      aria-controls="Packages">Packages</a>
+                  </li>
+
+
+
+
+                  <li class="action-bar__menu-item ">
+                    <a href="/iticket.i-city.my/pages/theme-park-info" class="action-bar__link">Operating Hours</a>
+                  </li>
+
+
+
+
+                  <li class="action-bar__menu-item ">
+                    <a href="/iticket.i-city.my/pages/race-karting-team-building" class="action-bar__link">Race Karting
+                      Group Package</a>
+                  </li>
+
+
+
+
+                  <li class="action-bar__menu-item ">
+                    <a href="/iticket.i-city.my/pages/team-building" class="action-bar__link">HRDF Team Building On
+                      ICE</a>
+                  </li>
+
+
+                </ul>
+
+
+
+
+
+
+
+                <ul class="action-bar__menu--sub action-bar__menu list--inline  " id="Packages"
+                  data-child-list-handle="packages" role="navigation">
+                  <li>
+                    <button type="button" class="btn action-bar__back action-bar__link" aria-controls="SiteNav">
+                      <span class="icon icon-arrow-left" aria-hidden="true"></span>
+                      <span class="icon__fallback-text">Back to site navigation</span>
+                    </button>
+                  </li>
+
+                  <li class="action-bar__menu-item ">
+                    <a href="/iticket.i-city.my/pages/ticket-pricing" class="action-bar__link">Ticket Pricing</a>
+                  </li>
+
+                  <li class="action-bar__menu-item ">
+                    <a href="/iticket.i-city.my/pages/terms-and-conditions" class="action-bar__link">Terms and
+                      Conditions</a>
+                  </li>
+
+                  <li class="action-bar__menu-item ">
+                    <a href="/iticket.i-city.my/pages/how-to-buy-through-website" class="action-bar__link">Guide</a>
+                  </li>
+
+                </ul>
+
+
+
+
+
+
+
+
+
+
+
+              </nav>
+            </div>
+
+
+
+
+          </div>
+        </div>
       </div>
     </div>
 
     <main class="main-content" role="main">
       <!--LayoutHub-Workspace-Start-->
 
-<div id="shopify-section-article-template" class="shopify-section">
+      <div id="shopify-section-article-template" class="shopify-section">
 
 
 
 
 
-<div class="page-width page-container" itemscope itemtype="http://schema.org/Article">
-  <header class="section-header">
-    <h1 class="h2">5 Unbelievable Christmas Traditions Around The World</h1>
-    <ul class="list--inline article-meta txt--minor">
-      <li>Mary i-City</li>
-      
-      <li class="list--inline__separator"><time datetime="2020-12-22T17:53:22Z">December 22, 2020</time></li>
-    </ul>
-  </header>
+        <div class="page-width page-container" itemscope itemtype="http://schema.org/Article">
+          <header class="section-header">
+            <h1 class="h2">5 Unbelievable Christmas Traditions Around The World</h1>
+            <ul class="list--inline article-meta txt--minor">
+              <li>Mary i-City</li>
 
-  <article class="rte rte--indented-images" itemprop="articleBody">
-    <h3>1. Christmas Dinner In The United Kingdom</h3>
-<p><img src="https://cdn.shopify.com/s/files/1/2480/5042/files/Christmas-Dinner_480x480.jpg?v=1608630517" alt="" width="364" height="242" style="display: block; margin-left: auto; margin-right: auto;"></p>
-<p style="text-align: center;"><span style="font-weight: 400;">(Image: The Mirror)</span></p>
-<p><span style="font-weight: 400;">Confusingly, Christmas dinner in the UK is served between 1pm to 3pm on Christmas day which sounds more like a late lunch to us Malaysians. The reason for hosting their dinner parties so early in the day is to keep their evenings free to get drunk and watch holiday specials on TV usually airing later in the day!</span></p>
-<h3>2. In Italy, Christmas Starts Early</h3>
-<p><img src="https://cdn.shopify.com/s/files/1/2480/5042/files/Natale-Italia-main_480x480.jpg?v=1608630549" alt="" width="275" height="208" style="display: block; margin-left: auto; margin-right: auto;"></p>
-<p style="text-align: center;"><span style="font-weight: 400;">(Image: Expatclic)</span></p>
-<p><span style="font-weight: 400;">The 8th of December is an official bank holiday and it also serves to remind people that Christmas is around the corner and to get into the festive spirits! Italian families will already have their Christmas trees, crib and other Christmas decor up and ready by the 8th. On that day, Italians also begin making their holiday treat, torrone — a sweet that's made of sugar and toasted almonds.</span></p>
-<h3>3. German Kids Collect Sweets from Their Snow Boots<span> </span>
-</h3>
-<div><img src="https://cdn.shopify.com/s/files/1/2480/5042/files/4c9532fbc8a0e116054f1132e6ab856d_480x480.jpg?v=1608630561" alt="" width="281" height="312" style="display: block; margin-left: auto; margin-right: auto;"></div>
-<p style="text-align: center;"><span style="font-weight: 400;">(Image: Pinterest) </span></p>
-<p><span style="font-weight: 400;">Children all across Germany each leave a single boot outside their doorsteps during Christmas time. This is so St. Nicholas, Santa Claus's predecessor, can visit them at night and magically fill their boots with chocolate and sweets! Occasionally, some lucky kids will also get a little bit of money. This is parallel to hanging a sock above your chimney for Santa Clause for other European countries.</span></p>
-<h3>4. TVs in Sweden Air Donald Duck As A Christmas Special Every Year</h3>
-<p><img src="https://cdn.shopify.com/s/files/1/2480/5042/files/637a0201c7166dc153ffc599877695a5_480x480.png?v=1608630573" alt="" style="display: block; margin-left: auto; margin-right: auto;"></p>
-<p style="text-align: center;"><span style="font-weight: 400;">(Image: Pinterest) </span></p>
-<p><span style="font-weight: 400;">In Sweden, there is no Christmas without Donald Duck. Every year since 1959, TV1 (a broadcasting channel in Sweden), will air a Donald Duck special called, “Donald Duck and His Friends Wish You a Merry Christmas”. Families everywhere gather by their TV at 3pm on Christmas Eve!</span></p>
-<h3>5. Austrian Parents Tell Tales Of A Christmas Demon To Their Children </h3>
-<p><img src="https://cdn.shopify.com/s/files/1/2480/5042/files/krampus-everett-aava160_vz915_promo_480x480.jpg?v=1608630534" alt="" width="316" height="165" style="display: block; margin-left: auto; margin-right: auto;"></p>
-<p style="text-align: center;"><span style="font-weight: 400;">(Image: History.com)</span></p>
-<p><span style="font-weight: 400;">Austrian children fear Krampus, the half-goat, half-demon who literally disciplines naughty children using sticks. To imagine how Krampus looks, he has big horns, dark hair, fangs, and a long tongue. He also wears a chain and bells that ring as he swats the naughty children before dragging them with him back to the underworld. Just thinking about it will probably make you shiver!</span></p>
-<br>
-<p><span style="font-weight: 400;">Those are some wacky traditions you will see around the world. Maybe you can even start some of your own strange Christmas practices here in your own home! Time to get thinking!</span></p>
-  </article>
+              <li class="list--inline__separator"><time datetime="2020-12-22T17:53:22Z">December 22, 2020</time></li>
+            </ul>
+          </header>
 
-  
-    <hr class="hr--clear">
-    <h3 class="h2">Share this post</h3>
-    <!-- /snippets/social-sharing.liquid -->
-<div class="social-sharing" data-permalink="">
-
-  
-    <a target="_blank" href="/iticket.i-city.my//www.facebook.com/sharer.php?u=/blogs/blog/5-unbelievable-christmas-traditions-around-the-world" class="share-facebook" title="Share on Facebook">
-      <span class="icon icon-facebook" aria-hidden="true"></span>
-      <span class="share-title" aria-hidden="true">Share</span>
-      <span class="visually-hidden">Share on Facebook</span>
-    </a>
-  
-
-  
-    <a target="_blank" href="/iticket.i-city.my//twitter.com/share?text=5%20Unbelievable%20Christmas%20Traditions%20Around%20The%20World&amp;url=/blogs/blog/5-unbelievable-christmas-traditions-around-the-world" class="share-twitter" title="Tweet on Twitter">
-      <span class="icon icon-twitter" aria-hidden="true"></span>
-      <span class="share-title" aria-hidden="true">Tweet</span>
-      <span class="visually-hidden">Tweet on Twitter</span>
-    </a>
-  
-
-  
-    <a target="_blank" href="http://pinterest.com/pin/create/button/?url=/blogs/blog/5-unbelievable-christmas-traditions-around-the-world&amp;media=//iticket.i-city.my/cdn/shop/articles/Natale-Italia-main_1024x1024.jpg?v=1608630803&amp;description=5%20Unbelievable%20Christmas%20Traditions%20Around%20The%20World" class="share-pinterest" title="Pin on Pinterest">
-      <span class="icon icon-pinterest" aria-hidden="true"></span>
-      <span class="share-title" aria-hidden="true">Pin it</span>
-      <span class="visually-hidden">Pin on Pinterest</span>
-    </a>
-  
-
-</div>
-  
-
-  
-
-  <hr class="hr--clear">
-  <p class="text-center action-link">
-    <a href="/iticket.i-city.my/blogs/blog"><span class="icon icon-arrow-left action-link__icon" aria-hidden="true"></span> Back to Blog</a>
-  </p>
-</div>
+          <article class="rte rte--indented-images" itemprop="articleBody">
+            <h3>1. Christmas Dinner In The United Kingdom</h3>
+            <p><img src="https://cdn.shopify.com/s/files/1/2480/5042/files/Christmas-Dinner_480x480.jpg?v=1608630517"
+                alt="" width="364" height="242" style="display: block; margin-left: auto; margin-right: auto;"></p>
+            <p style="text-align: center;"><span style="font-weight: 400;">(Image: The Mirror)</span></p>
+            <p><span style="font-weight: 400;">Confusingly, Christmas dinner in the UK is served between 1pm to 3pm on
+                Christmas day which sounds more like a late lunch to us Malaysians. The reason for hosting their dinner
+                parties so early in the day is to keep their evenings free to get drunk and watch holiday specials on TV
+                usually airing later in the day!</span></p>
+            <h3>2. In Italy, Christmas Starts Early</h3>
+            <p><img src="https://cdn.shopify.com/s/files/1/2480/5042/files/Natale-Italia-main_480x480.jpg?v=1608630549"
+                alt="" width="275" height="208" style="display: block; margin-left: auto; margin-right: auto;"></p>
+            <p style="text-align: center;"><span style="font-weight: 400;">(Image: Expatclic)</span></p>
+            <p><span style="font-weight: 400;">The 8th of December is an official bank holiday and it also serves to
+                remind people that Christmas is around the corner and to get into the festive spirits! Italian families
+                will already have their Christmas trees, crib and other Christmas decor up and ready by the 8th. On that
+                day, Italians also begin making their holiday treat, torrone — a sweet that's made of sugar and toasted
+                almonds.</span></p>
+            <h3>3. German Kids Collect Sweets from Their Snow Boots<span> </span>
+            </h3>
+            <div><img
+                src="https://cdn.shopify.com/s/files/1/2480/5042/files/4c9532fbc8a0e116054f1132e6ab856d_480x480.jpg?v=1608630561"
+                alt="" width="281" height="312" style="display: block; margin-left: auto; margin-right: auto;"></div>
+            <p style="text-align: center;"><span style="font-weight: 400;">(Image: Pinterest) </span></p>
+            <p><span style="font-weight: 400;">Children all across Germany each leave a single boot outside their
+                doorsteps during Christmas time. This is so St. Nicholas, Santa Claus's predecessor, can visit them at
+                night and magically fill their boots with chocolate and sweets! Occasionally, some lucky kids will also
+                get a little bit of money. This is parallel to hanging a sock above your chimney for Santa Clause for
+                other European countries.</span></p>
+            <h3>4. TVs in Sweden Air Donald Duck As A Christmas Special Every Year</h3>
+            <p><img
+                src="https://cdn.shopify.com/s/files/1/2480/5042/files/637a0201c7166dc153ffc599877695a5_480x480.png?v=1608630573"
+                alt="" style="display: block; margin-left: auto; margin-right: auto;"></p>
+            <p style="text-align: center;"><span style="font-weight: 400;">(Image: Pinterest) </span></p>
+            <p><span style="font-weight: 400;">In Sweden, there is no Christmas without Donald Duck. Every year since
+                1959, TV1 (a broadcasting channel in Sweden), will air a Donald Duck special called, “Donald Duck and
+                His Friends Wish You a Merry Christmas”. Families everywhere gather by their TV at 3pm on Christmas
+                Eve!</span></p>
+            <h3>5. Austrian Parents Tell Tales Of A Christmas Demon To Their Children </h3>
+            <p><img
+                src="https://cdn.shopify.com/s/files/1/2480/5042/files/krampus-everett-aava160_vz915_promo_480x480.jpg?v=1608630534"
+                alt="" width="316" height="165" style="display: block; margin-left: auto; margin-right: auto;"></p>
+            <p style="text-align: center;"><span style="font-weight: 400;">(Image: History.com)</span></p>
+            <p><span style="font-weight: 400;">Austrian children fear Krampus, the half-goat, half-demon who literally
+                disciplines naughty children using sticks. To imagine how Krampus looks, he has big horns, dark hair,
+                fangs, and a long tongue. He also wears a chain and bells that ring as he swats the naughty children
+                before dragging them with him back to the underworld. Just thinking about it will probably make you
+                shiver!</span></p>
+            <br>
+            <p><span style="font-weight: 400;">Those are some wacky traditions you will see around the world. Maybe you
+                can even start some of your own strange Christmas practices here in your own home! Time to get
+                thinking!</span></p>
+          </article>
 
 
+          <hr class="hr--clear">
+          <h3 class="h2">Share this post</h3>
+          <!-- /snippets/social-sharing.liquid -->
+          <div class="social-sharing" data-permalink="">
 
 
-</div><!--LayoutHub-Workspace-End--><script type="text/javascript">var sh_handle_id = "493158629570";
-</script>
+            <a target="_blank"
+              href="/iticket.i-city.my//www.facebook.com/sharer.php?u=/blogs/blog/5-unbelievable-christmas-traditions-around-the-world"
+              class="share-facebook" title="Share on Facebook">
+              <span class="icon icon-facebook" aria-hidden="true"></span>
+              <span class="share-title" aria-hidden="true">Share</span>
+              <span class="visually-hidden">Share on Facebook</span>
+            </a>
+
+
+
+            <a target="_blank"
+              href="/iticket.i-city.my//twitter.com/share?text=5%20Unbelievable%20Christmas%20Traditions%20Around%20The%20World&amp;url=/blogs/blog/5-unbelievable-christmas-traditions-around-the-world"
+              class="share-twitter" title="Tweet on Twitter">
+              <span class="icon icon-twitter" aria-hidden="true"></span>
+              <span class="share-title" aria-hidden="true">Tweet</span>
+              <span class="visually-hidden">Tweet on Twitter</span>
+            </a>
+
+
+
+            <a target="_blank"
+              href="http://pinterest.com/pin/create/button/?url=/blogs/blog/5-unbelievable-christmas-traditions-around-the-world&amp;media=//iticket.i-city.my/cdn/shop/articles/Natale-Italia-main_1024x1024.jpg?v=1608630803&amp;description=5%20Unbelievable%20Christmas%20Traditions%20Around%20The%20World"
+              class="share-pinterest" title="Pin on Pinterest">
+              <span class="icon icon-pinterest" aria-hidden="true"></span>
+              <span class="share-title" aria-hidden="true">Pin it</span>
+              <span class="visually-hidden">Pin on Pinterest</span>
+            </a>
+
+
+          </div>
+
+
+
+
+          <hr class="hr--clear">
+          <p class="text-center action-link">
+            <a href="/iticket.i-city.my/blogs/blog"><span class="icon icon-arrow-left action-link__icon"
+                aria-hidden="true"></span> Back to Blog</a>
+          </p>
+        </div>
+
+
+
+
+      </div><!--LayoutHub-Workspace-End-->
+      <script type="text/javascript">var sh_handle_id = "493158629570";
+      </script>
 
     </main>
 
-    <div id="shopify-section-footer" class="shopify-section footer-section"><footer class="site-footer" role="contentinfo">
-  
-  
-    <ul class="list--inline site-footer__linklist">
-      
-        <li class="h4"><a href="/iticket.i-city.my/search">Search</a></li>
-      
-        <li class="h4"><a href="/iticket.i-city.my/pages/about-us">About Us</a></li>
-      
-        <li class="h4"><a href="/iticket.i-city.my/collections/all">Promotions</a></li>
-      
-        <li class="h4"><a href="/iticket.i-city.my/pages/how-to-buy-online-tickets">How To Buy Online Tickets</a></li>
-      
-        <li class="h4"><a href="/iticket.i-city.my/pages/faqs">FAQs</a></li>
-      
-        <li class="h4"><a href="/iticket.i-city.my/pages/contact-us">Contact Us</a></li>
-      
-        <li class="h4"><a href="/iticket.i-city.my/blogs/blog">Blog</a></li>
-      
-        <li class="h4"><a href="/iticket.i-city.my/policies/terms-of-service">Terms of Service</a></li>
-      
-        <li class="h4"><a href="/iticket.i-city.my/policies/refund-policy">Refund policy</a></li>
-      
-    </ul>
-  
+    <div id="shopify-section-footer" class="shopify-section footer-section">
+      <footer class="site-footer" role="contentinfo">
 
-  <div class="grid text-center large-up--grid--table">
-    <div class="grid__item large-up--one-quarter text-center">
-      <ul class="list--inline social-icons social-icons--footer">
-        
-          <li>
-            <a href="https://twitter.com/icitymy" title="i-City on Twitter">
-              <span class="icon icon-twitter" aria-hidden="true"></span>
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        
-        
-          <li>
-            <a href="https://www.facebook.com/icitymy" title="i-City on Facebook">
-              <span class="icon icon-facebook" aria-hidden="true"></span>
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-        
-        
-        
-        
-          <li>
-            <a href="https://www.instagram.com/icitymalaysia/" title="i-City on Instagram">
-              <span class="icon icon-instagram" aria-hidden="true"></span>
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-        
-        
-        
-        
-          <li>
-            <a href="https://www.youtube.com/c/iCityMalaysia/featured" title="i-City on YouTube">
-              <span class="icon icon-youtube" aria-hidden="true"></span>
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        
-        
-        
-      </ul>
+
+        <ul class="list--inline site-footer__linklist">
+
+          <li class="h4"><a href="/iticket.i-city.my/search">Search</a></li>
+
+          <li class="h4"><a href="/iticket.i-city.my/pages/about-us">About Us</a></li>
+
+          <li class="h4"><a href="/iticket.i-city.my/collections/all">Promotions</a></li>
+
+          <li class="h4"><a href="/iticket.i-city.my/pages/how-to-buy-online-tickets">How To Buy Online Tickets</a></li>
+
+          <li class="h4"><a href="/iticket.i-city.my/pages/faqs">FAQs</a></li>
+
+          <li class="h4"><a href="/iticket.i-city.my/pages/contact-us">Contact Us</a></li>
+
+          <li class="h4"><a href="/iticket.i-city.my/blogs/blog">Blog</a></li>
+
+          <li class="h4"><a href="/iticket.i-city.my/policies/terms-of-service">Terms of Service</a></li>
+
+          <li class="h4"><a href="/iticket.i-city.my/policies/refund-policy">Refund policy</a></li>
+
+        </ul>
+
+
+        <div class="grid text-center large-up--grid--table">
+          <div class="grid__item large-up--one-quarter text-center">
+            <ul class="list--inline social-icons social-icons--footer">
+
+              <li>
+                <a href="https://twitter.com/icitymy" title="i-City on Twitter">
+                  <span class="icon icon-twitter" aria-hidden="true"></span>
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="https://www.facebook.com/icitymy" title="i-City on Facebook">
+                  <span class="icon icon-facebook" aria-hidden="true"></span>
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+
+
+
+
+              <li>
+                <a href="https://www.instagram.com/icitymalaysia/" title="i-City on Instagram">
+                  <span class="icon icon-instagram" aria-hidden="true"></span>
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+
+
+
+
+              <li>
+                <a href="https://www.youtube.com/c/iCityMalaysia/featured" title="i-City on YouTube">
+                  <span class="icon icon-youtube" aria-hidden="true"></span>
+                  <span class="visually-hidden">YouTube</span>
+                </a>
+              </li>
+
+
+
+            </ul>
+          </div>
+          <div class="grid__item large-up--one-half">
+            <span class="site-footer__copyright">&copy; 2025, <a href="/iticket.i-city.my/">i-City</a>. <a
+                target="_blank" rel="nofollow"
+                href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered
+                by Shopify</a></span>
+          </div>
+          <div class="grid__item large-up--one-quarter text-center"></div>
+        </div>
+      </footer>
+
+      <script id="webchat__widget"
+        src="https://cdn.chatapi.net/webchat/widget/widget.js?cId=f524b633f55fe51125b1d9d7449f36da2861bb037a1ddaf78c8754503ac4f368"></script>
+
+
+
     </div>
-    <div class="grid__item large-up--one-half">
-      <span class="site-footer__copyright">&copy; 2025, <a href="/iticket.i-city.my/">i-City</a>. <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a></span>
-    </div>
-    <div class="grid__item large-up--one-quarter text-center"></div>
-  </div>
-</footer>
-
-<script id="webchat__widget" src="https://cdn.chatapi.net/webchat/widget/widget.js?cId=f524b633f55fe51125b1d9d7449f36da2861bb037a1ddaf78c8754503ac4f368"></script>
-
-
-
-</div>
 
   </div>
 
-  
-  
-    <script id="CartTemplate" type="text/template">
-      
+
+
+  <script id="CartTemplate" type="text/template">
+
         <form action="/cart" method="post" novalidate class="cart ajaxcart">
           <div class="ajaxcart__inner ajaxcart__inner--has-fixed-footer">
             {{#items}}
@@ -1156,8 +1277,8 @@ Tax included and shipping calculated at checkout
         </form>
       
     </script>
-    <script id="JsQty" type="text/template">
-      
+  <script id="JsQty" type="text/template">
+
         <div class="js-qty">
           <button type="button" class="js-qty__adjust js-qty__adjust--minus" data-id="{{key}}" data-qty="{{itemMinus}}" aria-label="Reduce item quantity by one">
             <span class="icon icon-minus" aria-hidden="true"></span>
@@ -1172,18 +1293,21 @@ Tax included and shipping calculated at checkout
       
     </script>
 
-  
+
   <ul hidden>
     <li id="a11y-refresh-page-message">Choosing a selection results in a full page refresh.</li>
     <li id="a11y-selection-message">Press the space key then arrow keys to make a selection.</li>
   </ul>
-<!--AZEXO_Footer_Scripts-->  <!--End_AZEXO_Footer_Scripts--><script src="//iticket.i-city.my/cdn/shop/t/17/assets/sectionhub.js?v=179762870088611793531641197959" defer></script><!--Content in content_for_footer -->
+  <!--AZEXO_Footer_Scripts--> <!--End_AZEXO_Footer_Scripts-->
+  <script src="//iticket.i-city.my/cdn/shop/t/17/assets/sectionhub.js?v=179762870088611793531641197959" defer></script>
+  <!--Content in content_for_footer -->
 
-			
-<!--LH-->
 
-<div id="shopify-block-AU3RpOHNzMElZU0pJQ__6143736321357441667" class="shopify-block shopify-app-block">
-<script src="//code.tidio.co/ds1a8dshmlgvx7mj2fqup4ujeqaum8se.js?extensionVersion=1.3.0" async></script>
-</div></body>
+  <!--LH-->
+
+  <div id="shopify-block-AU3RpOHNzMElZU0pJQ__6143736321357441667" class="shopify-block shopify-app-block">
+    <script src="//code.tidio.co/ds1a8dshmlgvx7mj2fqup4ujeqaum8se.js?extensionVersion=1.3.0" async></script>
+  </div>
+</body>
+
 </html>
-
