@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="/icity/images/favicon.ico">
+	<title>FAQs | iCity</title>
+	
+<link rel="stylesheet" type="text/css" media="screen" href="/web/jquery/themes/smoothness/jquery-ui.css"/>
+<!--[if lte IE 7]>
+<style type="text/css">
+html .jquerycssmenu{height: 1%;} /*Holly Hack for IE7 and below*/
+</style>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="/icity/promotion/common/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/icity/promotion/common/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/icity/promotion/common/screen-min.css"/>
+
+	
+
+
+<script type="text/javascript" src="/icity/promotion/common/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/web/jquery/form/jquery.form.js"></script>
+<script type="text/javascript" src="/icity/promotion/common/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="/icity/promotion/common/jquery-ui-min.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/jquery.countdown.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/date.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/jquery.cookie.js"></script>
+<script type="text/javascript" src="/icity/promotion/common/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/icity/promotion/common/jquery.skitter.min.js"></script>
+<!-- 
+<script type="text/javascript" src="/web/jquery/misc/jquery.dimensions.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/jquery.dates.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/jquery.chain.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/jquery.cookie.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/jquery.template.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/jquery.timer.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/jquery.heartbeat.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/jquery.filter.js"></script>
+<script type="text/javascript" src="/web/jquery/misc/calendar.js"></script>
+<script type="text/javascript" src="/web/jquery/validate/jquery.metadata.js"></script>
+ -->
+<script type="text/javascript" src="/icity/promotion/common/script.js"></script>
+
+<script>
+var _contextPath = "/icity";
+var _memberLoginCookieName = 'memberLoginCookie';
+var _cookieSeparator = "-_-_-";
+
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58394361-1', 'iticket.i-city.my');
+ga('send', 'pageview');
+
+
+</script>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+
+	<script>
+	$(document).ready(function() {
+		$.ajax({
+			url: "/icity/promotion/category.get",
+			success: function(response) {
+				$("ul.categories").html(response);
+			}
+		});
+	});
+	</script>
+</head>
+<style>
+td, tr{
+  font-size: 100%;
+  font: inherit;
+}
+.question{
+	font-weight: bold;
+}
+.answer{
+	color: #003366;
+}
+</style>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper wide">
+		
+<script type="text/javascript">
+$(document).ready(function() {
+	if(!isMemberStillLogin()) {
+		$(".member-option").hide();
+		$(".login-option").show();
+	} else {
+		$(".login-option").hide();
+		$(".member-option").show();
+		var memberName = $.cookie('memberNameCookie');
+		memberName = memberName.replace(/"/g, "");
+		$("#memberName").text(memberName);
+	}
+
+	$("#logout").click(function() {
+		if(confirm("Are you sure you want to logout your account now?")) {	
+			$.cookie('memberLoginCookie', null, {expires: 0, path: '/'});
+			window.location = "/icity/promotion/list.do";
+			return false;
+		}
+	});
+	
+	getCartCount();
+});
+
+function getCartCount() {
+	$.ajax({
+		url: "/icity/promotion/cart-count.get",
+		success: function(response) { 
+			$("#cart-count").html(response);
+		}
+	});
+}
+</script>
+<div class="main_header left">
+	<a href="/icity/promotion/list.do">
+		<img src="/icity/images/logo_title.jpg" border="0" /> <br>
+		<span style="color:white; font-size:20px";><b>Online Ticketing</b></span>
+	</a>
+</div>
+
+<!-- navigator -->
+<div class="main_navigator">
+	<ul>
+		<li><a href="/icity/promotion/list.do">Home</a></li>
+		<li><a href="/icity/promotion/how-to-go.get">How To Go</a></li>
+		<li><a href="/icity/promotion/operation-hours.get">Operation Hours</a></li>
+		<li><a href="/icity/promotion/faq.get">FAQs</a></li>
+		<li><a href="http://i-city.my/crm/" target="_blank" title="Click to contact us">Support</a></li>
+		<li><a href="/icity/promotion/about-us.get">Contact Us</a></li>
+	</ul>
+</div>
+
+<!-- userbar -->
+<div class="main_userbar">
+	<div class="main_userbar_inner">
+		<ul>
+			<li class="login-option"><a href="/icity/member/signin.do"><i class="icon-lock"></i> Welcome (Guest)</a></li>
+			<li class="member-option"><a href="/icity/member/account.do"><i class="icon-lock"></i> Welcome (<span id="memberName"></span>)</a></li>
+			<li class="login-option"><a href="/icity/member/signin.do"><i class="icon-signin"></i> Sign In</a></li>
+			<li class="login-option"><a href="/icity/registration"><i class="icon-keyboard"></i> Register</a></li>
+			<li class="member-option"><a href="#" id="logout"><i class="icon-signout"></i> Logout</a></li>
+			<li><a href="/icity/promotion/checkout.do"><i class="icon-shopping-cart"></i> <span id="cart-count">Shopping Cart</span></a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+		<!-- body -->
+		<div class="main_body left">
+
+			<!-- leftbar -->
+			<div class="sidebar left">
+				<div>
+					<h3>Categories</h3>
+					<ul class="categories"></ul>
+				</div>
+			</div>
+
+			<!-- rightbar -->
+			<div class="sidebar right"></div>
+
+			<!-- content -->
+			<div class="content">
+				<div class="content_inner">
+					<h1 class="skin">FAQs</h1>
+					<div class="page_content">
+						<br/>
+						<span class="question">Q- How and where can I buy a ticket?</span><br/>
+						<span class="answer">A- You may do so at walk in ticketing counter or online at <a href="http://iticket.i-city.my">http://iticket.i-city.my</a></span>
+						<br/>
+						<br/>
+						<span class="question">Q- What is the different buying online and walk in?</span><br/>
+						<span class="answer">A- You can enjoy great discount or combo package through online purchase.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- Can I buy the ticket on the day its self?</span><br/>
+						<span class="answer">A- Yes, you may purchase the ticket on the day itself at the counter</span>
+						<br/>
+						<br/>
+						<span class="question">Q- Can I buy ticket online if I want to visit today?</span><br/>
+						<span class="answer">A- No, all purchase must be made at least two (2) days in advance.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- What are the preferred modes of payment if I purchase online tickets?</span><br/>
+						<span class="answer">A- For your convenience, a variety of payments methods are accepted including using credit or debit card and online banking.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- I forgot to bring my tickets / I don't have any printer to print the confirmation slip. Can I still redeem my attraction tickets?</span><br/>
+						<span class="answer">A- Yes. You may show your identification card &amp; confirmation email via telephone (H/P) the respective counter upon redemption. </span>
+						<br/>
+						<br/>
+						<span class="question">Q- Can I leave and re-enter the attraction?</span><br/>
+						<span class="answer">A- Park admission is valid for per entry only. You can't re-enter the attraction once you leave the attractions.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- My kids is 2 years old. Should buy a tickets for them?</span><br/>
+						<span class="answer">A- A child above 90cm and below 12 years old will require a child ticket. However if your child is below 90cm no ticket is required.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- I'm unable to make it to the Leisure Park and have decided to visit it another day. Will I be able to do change my visit date?</span><br/>
+						<span class="answer">A- No. Please note that confirmed transactions cannot be cancelled, refunded, or amended under any circumstances. </span>
+						<br/>
+						<br/>
+						<span class="question">Q- What can I do if is raining?</span><br/>
+						<span class="answer">A- Due to Malaysia's tropical climate, thunderstorms occur regularly. In the event of lightning within close proximity to the park, outdoor attractions will be closed for the safety of all guests. Because these storms generally occur in the late afternoon or early evening, we recommend you plan to use this time for souvenir shopping, having an early lunch or dinner, or enjoying any of our indoor attractions.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- Can I ask someone else to collect the tickets on my behalf?</span><br/>
+						<span class="answer">A- No. Third party collection is not allowed.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- What does "Pax" or "Paxs" mean?</span><br/>
+						<span class="answer">A- "Pax" means "Passenger" or "Person", a Passenger can be an adult, child (2-12 years old) or infant (below 2 years old).</span>
+						<br/>
+						<br/>
+						<span class="question">Q- Does i-City deliver member card after I registered as a member ?</span><br/>
+						<span class="answer">A- No, i-City only accept FREE member registration online through this website.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- Can I make my purchase through telephone?</span><br/>
+						<span class="answer">A- No. You required to make online purchase by yourself. However, if you need further assistance, please contact our customer service.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- What are the operating hour? </span><br/>
+						<span class="answer">A-  You may check out at <a href="http://iticket.i-city.my/icity/promotion/operation-hours.get">http://iticket.i-city.my/icity/promotion/operation-hours.get</a><br/><br/>
+						*Management reserves the right to change the operation hours, close any rides or attractions, restrict the number of visitors, cancel or amend any activity without prior notice.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- How can I enjoy Senior Citizen rates?</span><br/>
+						<span class="answer">A- Senior Citizen rates are applicable to patrons who are 60 years old and above and i-City Staff will need to verify their I.C. upon redemption.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- The i-Ticket Online Confirmation Voucher carries my name. Are my vouchers transferrable? Or can someone collect on behalf?</span><br/>
+						<span class="answer">A- No. I-Ticket vouchers are generally not transferable. I-City Staff have the right to check and disallow the redemption of the voucher if the voucher is redeemed by a different person and ID is not match.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- Am I allowed to take photographs within the Park?</span><br/>
+						<span class="answer">A- Feel free to take as many pictures as you would like. However, please note that production cameras are not allowed into the park. </span>
+						<br/>
+						<br/>
+						<span class="question">Q- Are pets and animals allowed within the Park?</span><br/>
+						<span class="answer">A- No pets or animals are allowed within our premises.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- Is smoking allowed within the Park premises?</span><br/>
+						<span class="answer">A- Smoking is allowed only within designated areas. We urge customers to be considerate and observe the designated smoking areas.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- How far from Best Western hotel to i-City Leisure Park?</span><br/>
+						<span class="answer">A- It's within walking distance</span>
+						<br/>
+						<br/>
+						<span class="question">Q- Is there has any restaurant inside i-City?</span><br/>
+						<span class="answer">A- Yes. We have plenty of F&amp;B Outlets such as KFC, Subway, Old Town, Chicken Rice Shop and Spices of Penang.</span>
+						<br/>
+						<br/>
+						<span class="question">Q- What is your parking rate?</span><br/>
+						<span class="answer">A- Operation Hour: 6.00am - 5.59am.<br/>
+									Monday - Sunday, Public Holiday (6.00am - 6.59pm): Every 2 hour (or part thereof) RM 3.00.<br/>
+									*Additional charges will apply after EXIT at 7.00pm according to the rate of payment.<br/>
+									Monday - Sunday, Public Holiday (7.00pm - 5.59am): Per entry RM 10.00.<br/>
+									Lost Ticket: RM 50.00<br/>
+									Kindly exit before 15 minutes upon payment to avoid extra charges.
+						</span>
+						<br/>
+						<br/>
+						<span>Still can't find answers to your questions from this FAQ? Please contact us at :</span>
+						<br/>
+						<br/>
+						<table>
+							<col width="200px">
+							<col width="200px">
+							<tbody>
+								<tr>
+									<td colspan="2"><b>For enquiries on Online i-Ticketing</b></td>
+								</tr>
+								<tr>
+									<td colspan="2"><b>Customer Service Hotline:</b></td>
+								</tr>
+								<tr>
+									<td>Email</td>
+									<td>: <a href="mailto:travel@i-city.my">travel@i-city.my</a></td>
+								</tr>
+								<tr>
+									<td>Tel</td>
+									<td>: +603 5521 8868</td>
+								</tr>
+								<tr>
+									<td>Ticket Submission</td>
+									<td>: <a href="http://i-city.my/crm/" target="_blank">http://i-city.my/crm/</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<br/>
+						<table>
+						<col width="200px">
+							<col width="200px">
+							<tbody>
+								<tr>
+									<td colspan="2"><b>For enquiries on General Enquiry</b></td>
+								</tr>
+								<tr>
+									<td colspan="2"><b>Customer Service Hotline:</b></td>
+								</tr>
+								<tr>
+									<td>Email</td>
+									<td>: <a href="mailto:customer@i-city.my">customer@i-city.my</a></td>
+								</tr>
+								<tr>
+									<td>Tel</td>
+									<td>: +603 5521 8868</td>
+								</tr>
+							</tbody>
+						</table>
+						<span style="color:red"><i>(Call for inquiry : Weekday: 9.00 am - 6.00 pm , Saturday : 9.00 am - 1.00 pm , Sunday &amp; Public Holiday: Close)</i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<div class="main_footer">
+	<div class="main_footer_inner">
+		<h3><span></span></h3>
+		<div class="footer">
+		<table style="width:100%">
+			<tr>
+				<td>
+					<b>Stay Connected:</b>
+				</td>
+				<td>
+					<b>Related Sites:</b>
+				</td>
+				<td>
+					<b>Email Enquiries:</b>
+				</td>
+				<td>
+					<b>Customer Support (Office Hour):</b>
+				</td>
+				<td rowspan="2" style="vertical-align:top; text-align:right; color: #666666;">
+					<div id="copyright">
+					Copyright © 2015. Best Compatible With Google Chrome & Internet Explorer
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="https://www.facebook.com/icity.cityofdigitallights" target="_blank" title="https://www.facebook.com/icity.cityofdigitallights">
+						<img src="/icity/images/fb.jpg" width="30" height="30" border="0" />
+					</a>
+					<a href="https://instagram.com/iCitytravel" target="_blank" title="https://instagram.com/iCitytravel">
+						<img src="/icity/images/insta.jpg" width="30" height="30" border="0" />
+					</a>
+				</td>
+				<td style="vertical-align:top;">
+					<a href="http://www.i-City.my" target="_blank" title="http://www.i-City.my">www.i-City.my</a>
+				</td>
+				<td style="vertical-align:top;">
+					<a href="mailto:travel@i-city.my" target="_blank">travel@i-city.my</a>
+				</td>
+				<td style="vertical-align:top;">
+					<span style="text-decoration: underline;">+603-55218868</span><br/>
+					<span style="text-decoration: underline;">+603-55218800</span>
+				</td>
+			</tr>
+		</table>
+		</div><br><br>
+	</div>
+</div>
+	</div>
+</body>
+</html>

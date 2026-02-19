@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://iticket.i-city.my/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/2022-02-waterworld</loc>
+    <lastmod>2023-01-28T11:40:37+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/products/202211-23SuperAppMegaDealPackageBannerWW_Normal.png?v=1669631487</image:loc>
+      <image:title>WaterWorld</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/2022-02-waterworld-2-to-go</loc>
+    <lastmod>2023-01-28T11:19:35+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/products/202211-23WW2TG_Normal.png?v=1669634229</image:loc>
+      <image:title>WaterWorld (2-To-Go)</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/snowalk-aurora</loc>
+    <lastmod>2023-01-27T19:55:43+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/products/AppPackageBanner_SW.png?v=1669744355</image:loc>
+      <image:title>SnoWalk Aurora</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/all-day-happyness-pass-1</loc>
+    <lastmod>2023-01-24T20:53:11+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/products/AppPackageBanner_ADHP.png?v=1669746232</image:loc>
+      <image:title>All Day Happyness Pass</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/wet-rabbit-2d1n</loc>
+    <lastmod>2023-01-21T02:26:25+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/products/2023WetRabbit2D1N.png?v=1670507786</image:loc>
+      <image:title>Wet Rabbit 2D1N</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/winter-rabbit-2d1n</loc>
+    <lastmod>2023-01-21T05:42:33+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/products/2023WinterRabbit2D1N.png?v=1670507831</image:loc>
+      <image:title>Winter Rabbit 2D1N</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+</urlset>

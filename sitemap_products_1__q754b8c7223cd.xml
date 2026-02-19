@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://iticket.i-city.my/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/2022-02-waterworld</loc>
+    <lastmod>2024-01-10T22:13:17+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/products/202211-23SuperAppMegaDealPackageBannerWW_Normal.png?v=1669631487</image:loc>
+      <image:title>WaterWorld</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/snowalk-aurora</loc>
+    <lastmod>2024-01-10T22:13:17+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/products/AppPackageBanner_SW.png?v=1669744355</image:loc>
+      <image:title>SnoWalk Aurora</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/immersive-winterland1</loc>
+    <lastmod>2024-01-10T22:13:17+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/files/Screenshot2023-11-27at11.47.57PM_ada92026-4462-4a61-b988-6ea29e70d236.png?v=1701100867</image:loc>
+      <image:title>Immersive Winterland</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/zafigo-immersive-winterland</loc>
+    <lastmod>2024-01-10T22:13:17+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/files/Untitled-3.png?v=1701317717</image:loc>
+      <image:title>[ZAFIGO] Immersive Winterland</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/school-holiday-duo-splash-adventure</loc>
+    <lastmod>2024-01-10T22:13:17+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/files/202312DuoSplash.png?v=1702029713</image:loc>
+      <image:title>[WaterWorld] Duo Splash Adventure</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/digital-sports-arena</loc>
+    <lastmod>2024-01-10T22:13:17+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/files/DigitalSportArenaPackage_3.png?v=1703012042</image:loc>
+      <image:title>Digital Sports Arena</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/2024-all-day-happyness-pass</loc>
+    <lastmod>2024-01-10T22:13:17+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/files/AppPackageBanner_ADHP_c2b155b9-c8a4-4fe6-b350-ec42da95eb66.png?v=1704016036</image:loc>
+      <image:title>[2024] All Day Happyness Pass</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/2024-prosperous-8-joy</loc>
+    <lastmod>2024-01-10T22:13:17+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/files/Prosperous8Joy_60x30cm_1.png?v=1704340365</image:loc>
+      <image:title>[2024] Prosperous 8 Joy</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/products/race-karting</loc>
+    <lastmod>2024-01-10T22:13:17+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/2480/5042/files/Untitled_600x300px_2.png?v=1704714134</image:loc>
+      <image:title>Race Karting</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+</urlset>

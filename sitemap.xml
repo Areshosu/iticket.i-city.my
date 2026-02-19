@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- This is the parent sitemap linking to additional sitemaps for products, collections and pages as shown below. The sitemap can not be edited manually, but is kept up to date in real time. -->
+  <sitemap>
+    <loc>https://iticket.i-city.my/sitemap_products_1.xml?from=7922169708790&amp;to=9018662584566</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://iticket.i-city.my/sitemap_pages_1.xml?from=2818703389&amp;to=117943042294</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://iticket.i-city.my/sitemap_collections_1.xml?from=12172754973&amp;to=109082869848</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://iticket.i-city.my/sitemap_blogs_1.xml</loc>
+  </sitemap>
+</sitemapindex>

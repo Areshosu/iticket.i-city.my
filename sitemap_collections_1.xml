@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://iticket.i-city.my/collections/all</loc>
+    <lastmod>2024-01-13T13:25:09+08:00</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://iticket.i-city.my/collections/best-sellers</loc>
+    <lastmod>2024-01-02T20:01:11+08:00</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+</urlset>
